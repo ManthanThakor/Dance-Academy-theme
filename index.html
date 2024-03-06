@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- TITLE -->
+  <title>Dance-Academy</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="responsive.css" />
+  <link rel="icon" type="image/x-icon" href="Dance-Academy-theme/imgs/logo/dance-academy-logo.png" />
+  <script src="https://kit.fontawesome.com/cb104e752f.js" crossorigin="anonymous"></script>
+  <!-- animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- Add the slick-theme.css for default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+</head>
+
+<body>
+
+
+    <!-- -----------------------LIBRARIES------------------------- -->
+
+    <!--  Custom scripts Bootstrap JavaScript Libraries for this template -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+
+    <!--  Custom scripts slick slider for this template -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--  Custom scripts animation for this template-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- ============SCRIPT FOR ANIMATION=============== -->
+
+    <script>
+      AOS.init(
+        {
+          duration: 1000,
+          once: true,
+
+        }
+      );
+    </script>
+
+    <!-- ============SCRIPT FOR slick slider=============== -->
+    <script>
+      $(document).ready(function () {
+        $('.slick-slider-container').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true, 
+
+                prevArrow: '<button type="button" id="slick-prev" class="slick-prev"><img src="Imgs/image-removebg-preview (2).png" style="height: 45px;width: 40px;" id="nextbutton-slick" /></button>',
+                nextArrow: '<button type="button" id="slick-next" class="slick-next"><img src="Imgs/image-removebg-preview (3).png" style="height: 45px ;width: 40px;"  id="prevbutton-slick"/></button>',
+            });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".card-group").slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 3000,
+
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 844,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 660,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 390,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+
+              },
+            },
+          ],
+        });
+      });
+    </script>
+</body>
+</html>
