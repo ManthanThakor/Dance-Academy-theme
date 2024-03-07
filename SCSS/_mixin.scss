@@ -1,0 +1,28 @@
+
+@mixin fonts($weight,$size){
+    font-family: "Raleway";
+    font-weight: $weight;
+    $fontsize: $size;
+  }
+
+@mixin  textalign($value){
+text-align: $value;
+}
+@mixin justify($value){
+    justify-content: $value;
+}
+@mixin  textalign-c{
+text-align: center;
+}
+@mixin justify-c{
+    justify-content: center;
+}
+
+@mixin box($value){
+    @if $value == dark{
+        background-color: #000000;
+    }
+    @else  if $value == light {
+        background-color: #ffffff;
+    }
+}
