@@ -8,9 +8,15 @@
   height: 1000px;
 }
 
-/* ----home-section---- */
-#home-section {
+/* ----nav and home-section---- */
+#nav-home-section {
   position: absolute;
   top: 0 !important;
   z-index: 10;
+}
+
+/* ----home-section---- */
+#home-section {
+  padding-left: 80px !important;
+  padding-right: 80px !important;
 }/*# sourceMappingURL=main.css.map */

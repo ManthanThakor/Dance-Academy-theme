@@ -45,19 +45,17 @@
       </div>
     </div>
     <!-- home-section -->
-    <div class="container-fluid" id="home-section">
-      <nav>
+    <div class="container-fluid" id="nav-home-section">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-          <div class="container-fluid">
+          <div class="container-fluid" id="home-section">
             <a class="navbar-brand d-flex flex-column" href="dance.html">
               <img src="imgs/logo/dance-academy-logo.png" alt="" width="100px" height="140px" class="logo">
               <p class="logo-text">Dance Academy</p>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"><img src="Imgs/images.png" id="burger-img"> </span></button>
+
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                 <li class="nav-item">
@@ -88,7 +86,7 @@
             </div>
           </div>
         </nav>
-      </nav>
+     
       <div class="owl-carousel owl-theme" id="head">
         <div class="heading item ">
           <h1 class="text-capitalize h1-text">lets dance with us</h1>
@@ -153,8 +151,9 @@
         autoplaySpeed: 2000,
         arrows: true,
         dots: true,
-        prevArrow: '<button type="button" id="slick-prev" class="slick-prev"><img src="Imgs/image-removebg-preview (2).png" style="height: 45px;width: 40px;" id="nextbutton-slick" /></button>',
-        nextArrow: '<button type="button" id="slick-next" class="slick-next"><img src="Imgs/image-removebg-preview (3).png" style="height: 45px ;width: 40px;"  id="prevbutton-slick"/></button>',
+        arrows:false,
+        // prevArrow: '<button type="button" id="slick-prev" class="slick-prev"><img src="Imgs/image-removebg-preview (2).png" style="height: 45px;width: 40px;" id="nextbutton-slick" /></button>',
+        // nextArrow: '<button type="button" id="slick-next" class="slick-next"><img src="Imgs/image-removebg-preview (3).png" style="height: 45px ;width: 40px;"  id="prevbutton-slick"/></button>',
       });
     });
   </script>
