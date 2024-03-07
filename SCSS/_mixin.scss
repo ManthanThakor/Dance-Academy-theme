@@ -1,9 +1,29 @@
 
+// for fontsize and font family
+
 @mixin fonts($weight,$size){
     font-family: "Raleway";
     font-weight: $weight;
     $fontsize: $size;
   }
+
+//   for height 
+
+@mixin height($height){
+    height: $height + px;
+}
+
+// for width 
+
+@mixin width($width){
+    width: $width + px;
+}
+
+@mixin h-w($height,$width){
+    height: $height + px;
+    width: $width + px;
+}
+// for text align and justfy 
 
 @mixin  textalign($value){
 text-align: $value;
@@ -11,12 +31,17 @@ text-align: $value;
 @mixin justify($value){
     justify-content: $value;
 }
+
+// for text align and justfy  center
+
 @mixin  textalign-c{
 text-align: center;
 }
 @mixin justify-c{
     justify-content: center;
 }
+
+// for bg color of container
 
 @mixin box($value){
     @if $value == dark{

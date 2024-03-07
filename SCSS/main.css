@@ -4,6 +4,10 @@
 }
 
 /* ----bg-img section---- */
+#background-img-sec-1 {
+  height: 1000px;
+}
+
 /* ----home-section---- */
 #home-section {
   position: absolute;
