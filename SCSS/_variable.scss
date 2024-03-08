@@ -1,2 +1,31 @@
 $black-color:#000000;
-$fefe-color: #fefefe;
+$fefe: #fefefe;
+$hov-red:#e62646;
+$font-stack: "Brush Script Std" ;
+$border-radius: 4px !default;
+
+$theme-colors: (
+  primary: #3498db,
+  success: #2ecc71,
+  danger:  #e62646
+);
+$theme-padding: (
+  pading: 10px,
+  success: #2ecc71,
+  danger:  #e62646
+);
+$f-size-zone: (
+  pad: 10px,
+  suc: 30px,
+  dan: 16px
+);
+$font-size: 16px;
+
+
+// .button-primary {
+//   background-color: map-get($theme-colors, primary);
+// }
+
+// .button-success {
+//   background-color: map-get($theme-colors, success);
+// }

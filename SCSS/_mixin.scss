@@ -2,9 +2,10 @@
 // for fontsize and font family
 
 @mixin fonts($weight,$size){
-    font-family: "Raleway";
-    font-weight: $weight;
-    $fontsize: $size;
+    font-family: "Raleway" !important;
+    font-weight: $weight !important;
+    font-size: $size + px ;
+    
   }
 
 //   for height 
@@ -29,6 +30,7 @@
 text-align: $value;
 }
 @mixin justify($value){
+    display: flex;
     justify-content: $value;
 }
 
@@ -38,6 +40,7 @@ text-align: $value;
 text-align: center;
 }
 @mixin justify-c{
+    display: flex;
     justify-content: center;
 }
 

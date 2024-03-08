@@ -15,8 +15,115 @@
   z-index: 10;
 }
 
+/* ----logo---- */
+.navbar-brand {
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 46px;
+  color: #fefefe;
+  font-family: "Brush Script Std" !important;
+  font-style: italic;
+}
+
 /* ----home-section---- */
 #home-section {
+  padding: 50px 80px 120px 80px !important;
+}
+
+.nav-item {
+  padding: 10px !important;
+}
+.nav-item .nav-text {
+  letter-spacing: 0px;
+  line-height: 25px;
+  color: #fefefe;
+  font-family: "Raleway" !important;
+  font-weight: 500 !important;
+  font-size: 18px;
+  /* Default border style (transparent) */
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.3s ease, transform 0.3s ease;
+}
+.nav-item:hover .nav-text {
+  color: #e62646 !important;
+  /* Visible border on hover */
+  border-bottom-color: #e62646;
+  transform: scale(1.2) translateY(-1px);
+}
+
+.nav-item a {
+  padding: 10px !important;
+}
+
+.home-head-sec {
   padding-left: 80px !important;
   padding-right: 80px !important;
+}
+
+.home-head-sec {
+  display: flex;
+  display: flex;
+  justify-content: center;
+}
+
+.home-head-sec-one {
+  padding-top: 0%;
+}
+.home-head-sec-one .home-t-one {
+  letter-spacing: 2px;
+  line-height: 70px;
+  color: #fefefe;
+  text-align: center;
+  font-family: "Raleway" !important;
+  font-weight: 800 !important;
+  font-size: 80px;
+}
+
+.home-head-sec-two {
+  letter-spacing: 2px;
+  color: #fefefe;
+  text-align: center;
+  font-family: "Raleway" !important;
+  font-weight: 500 !important;
+  font-size: 30px;
+  padding-top: 40px !important;
+  padding-bottom: 65px !important;
+}
+
+.home-button-part {
+  display: flex;
+  justify-content: center;
+}
+
+.home-head-sec-button {
+  letter-spacing: 1px;
+  color: #fefefe;
+  text-align: center;
+  font-family: "Raleway" !important;
+  font-weight: 500 !important;
+  font-size: 18px;
+  width: 210px;
+  height: 41px;
+  border-radius: 20px;
+  background-color: #e62646;
+  border: none;
+}
+
+/* ----Dots for slick slider---- */
+#slick-slide-control00 {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.slick-dots-t {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

@@ -33,9 +33,10 @@
   <!-- nav part + background-part -->
   <div class="navbar-part">
     <!-- background-part -->
-    <div class=" slick-slider-container bg-img" style="width: 100%; height: 1000px;" >
+    <div class=" slick-slider-container bg-img" style="width: 100%; height: 1000px;">
       <div class=" carousel-item">
-        <img src="imgs/background-img/dancer_theme_background.png" class="w-100" style="height: 1000px;" id="background-img-sec-1" alt="...">
+        <img src="imgs/background-img/dancer_theme_background.png" class="w-100" style="height: 1000px;"
+          id="background-img-sec-1" alt="...">
       </div>
       <div class="carousel-item">
         <img src="imgs/background-img/dancer_theme_background.png" class="w-100" id="background-img-sec-1" alt="...">
@@ -46,52 +47,57 @@
     </div>
     <!-- home-section -->
     <div class="container-fluid" id="nav-home-section">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-          <div class="container-fluid" id="home-section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid" id="home-section">
+          <div class="logo-section">
             <a class="navbar-brand d-flex flex-column" href="dance.html">
-              <img src="imgs/logo/dance-academy-logo.png" alt="" width="100px" height="140px" class="logo">
+              <img src="imgs/logo/dance-academy-logo.png" alt="" width="100px" height="120px" class="logo">
               <p class="logo-text">Dance Academy</p>
             </a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-            class="navbar-toggler-icon"><img src="Imgs/images.png" id="burger-img"> </span></button>
-
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link nav-text active" aria-current="page" href="#head">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="#class">Class</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="#learn">Learn</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="#shedule">Shedule</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="#event">Event</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="#feedback">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
           </div>
-        </nav>
-     
-      <div class="owl-carousel owl-theme" id="head">
-        <div class="heading item ">
-          <h1 class="text-capitalize h1-text">lets dance with us</h1>
-          <p class="sub-heading">and hold your beloved moments</p>
-          <button class="head-button" id="head-btn">Register Now</button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"><img src="Imgs/images.png" id="burger-img">
+            </span></button>
+
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#head">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#class">Class</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#learn">Learn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#shedule">Shedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#event">Event</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#feedback">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-text" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="home-head-sec" id="home-head-sec">
+        <div class="home-head-sec-one">
+          <h1 class="text-uppercase home-t-one">let's dance with us</h1>
+          <p class="home-head-sec-two">and hold your beloved moments</p>
+          <div class="home-button-part">
+            <button class="home-head-sec-button" id="home-btn">Register Now</button>
+          </div>
         </div>
       </div>
     </div>
@@ -149,9 +155,11 @@
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        arrows: true,
         dots: true,
-        arrows:false,
+        arrows: false,
+          appendDots: $('.slick-slider-container'),
+       dotsClass: 'slick-dots-t slick-slider-container'
+
         // prevArrow: '<button type="button" id="slick-prev" class="slick-prev"><img src="Imgs/image-removebg-preview (2).png" style="height: 45px;width: 40px;" id="nextbutton-slick" /></button>',
         // nextArrow: '<button type="button" id="slick-next" class="slick-next"><img src="Imgs/image-removebg-preview (3).png" style="height: 45px ;width: 40px;"  id="prevbutton-slick"/></button>',
       });
