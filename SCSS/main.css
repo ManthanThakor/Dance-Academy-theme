@@ -6,6 +6,7 @@
 /* ----bg-img section---- */
 #background-img-sec-1 {
   height: 1000px;
+  background-color: #000000;
 }
 
 /* ----nav and home-section---- */
@@ -53,6 +54,10 @@
   /* Visible border on hover */
   border-bottom-color: #e62646;
   transform: scale(1.2) translateY(-1px);
+}
+
+.carousel-item img {
+  width: 100% !important;
 }
 
 .nav-item a {
@@ -106,24 +111,52 @@
   font-family: "Raleway" !important;
   font-weight: 500 !important;
   font-size: 18px;
-  width: 210px;
-  height: 41px;
+  height: 41px !important;
+  width: 210px !important;
   border-radius: 20px;
   background-color: #e62646;
   border: none;
 }
 
 /* ----Dots for slick slider---- */
-#slick-slide-control00 {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #ffffff;
+.slick-dots li {
+  margin: 0 0.25rem !important;
+  height: 0px !important;
+  width: 40px !important;
+  bottom: 215px;
+}
+.slick-dots button {
+  display: block;
+  padding: 15px !important; /* Increased gap */
+  border: 3px solid rgb(255, 255, 255) !important;
+  border-radius: 100%;
+  background-color: transparent; /* Set to transparent */
+  box-sizing: border-box; /* Include padding in the width and height */
+  text-indent: -9999px;
+  position: relative;
+}
+.slick-dots button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px !important;
+  left: 5px !important;
+  width: 85%; /* Smaller white circle */
+  height: 85%; /* Smaller white circle */
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255); /* Match the button color */
+  transform: translateZ(-1px); /* Move behind the button */
+  opacity: 1 !important;
+}
+.slick-dots li.slick-active button {
+  border: 3px solid #e62646 !important;
+}
+.slick-dots li.slick-active button:before {
+  background-color: #e62646; /* Change color on activation */
 }
 
-.slick-dots-t {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
-  background-color: #ffffff;
+/* ----SERVICE SECTION---- */
+.home-head-sec {
+  padding-left: 80px !important;
+  padding-right: 80px !important;
 }/*# sourceMappingURL=main.css.map */

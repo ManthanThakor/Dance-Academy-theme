@@ -31,20 +31,24 @@
 <body>
 
   <!-- nav part + background-part -->
-  <div class="navbar-part">
+  <div class="navbar-part" style="height: 1000px">
     <!-- background-part -->
-    <div class=" slick-slider-container bg-img" style="width: 100%; height: 1000px;">
-      <div class=" carousel-item">
-        <img src="imgs/background-img/dancer_theme_background.png" class="w-100" style="height: 1000px;"
-          id="background-img-sec-1" alt="...">
+    <div class=" slick-slider-container bg-img" style="width:100%; height: 1000px;">
+      <div class=" carousel-item" style="width: fit-content;">
+        <img src="imgs/background-img/dancer_theme_background.png" class=""
+          style="height: 1000px; background-color: black;" id="background-img-sec-1" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="imgs/background-img/dancer_theme_background.png" class="w-100" id="background-img-sec-1" alt="...">
+        <img src="imgs/background-img/dancer_theme_background.png" class="" id="background-img-sec-1"
+          style="height: 1000px; background-color: black;" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="imgs/background-img/dancer_theme_background.png" class="w-100" id="background-img-sec-1" alt="...">
+        <img src="imgs/background-img/dancer_theme_background.png" class="" id="background-img-sec-1"
+          style=" height: 1000px; background-color: black;" alt="...">
       </div>
     </div>
+
+
     <!-- home-section -->
     <div class="container-fluid" id="nav-home-section">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
@@ -103,9 +107,44 @@
     </div>
   </div>
 
+  <!-- Services-section -->
 
-
-
+  <div class=".container-fluid" id="Services-section">
+    <div class="row">
+      <div class="col-xxl-3 service-section-one">
+        <img src="" class="card-img-top card_img" alt="...">
+        <hr>
+        <h5 class="card-title text-capitalize card_heading">Ballroom Dance</h5>
+        <p class="card_text "><span class="mx-auto">50+</span> Some quick example text to build on the card title and
+          make up the bulk of the card's content.</p>
+        <div class="tringle_cut"></div>
+      </div>
+      <div class="col-xxl-3">
+        <img src="" class="card-img-top card_img" alt="...">
+        <hr>
+        <h5 class="card-title text-capitalize card_heading">Ballroom Dance</h5>
+        <p class="card_text"><span class="mx-auto">50+</span> Some quick example text to build on the card title and
+          make up the bulk of the card's content.</p>
+        <div class="tringle_cut"></div>
+      </div>
+      <div class="col-xxl-3">
+        <img src="" class="card-img-top card_img" alt="...">
+        <hr>
+        <h5 class="card-title text-capitalize card_heading">Ballroom Dance</h5>
+        <p class="card_text"><span class="mx-auto">50+</span> Some quick example text to build on the card title and
+          make up the bulk of the card's content.</p>
+        <div class="tringle_cut"></div>
+      </div>
+      <div class="col-xxl-3">
+        <img src="source/img/block4.png" class="card-img-top card_img" alt="...">
+        <hr>
+        <h5 class="card-title text-capitalize card_heading">Ballroom Dance</h5>
+        <p class="card_text"><span class="mx-auto">50+</span> Some quick example text to build on the card title and
+          make up the bulk of the card's content.</p>
+        <div class="tringle_cut"></div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -153,12 +192,11 @@
       $('.slick-slider-container').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         dots: true,
         arrows: false,
-          appendDots: $('.slick-slider-container'),
-       dotsClass: 'slick-dots-t slick-slider-container'
+
 
         // prevArrow: '<button type="button" id="slick-prev" class="slick-prev"><img src="Imgs/image-removebg-preview (2).png" style="height: 45px;width: 40px;" id="nextbutton-slick" /></button>',
         // nextArrow: '<button type="button" id="slick-next" class="slick-next"><img src="Imgs/image-removebg-preview (3).png" style="height: 45px ;width: 40px;"  id="prevbutton-slick"/></button>',
@@ -166,56 +204,56 @@
     });
   </script>
   <script>
-    $(document).ready(function () {
-      $(".card-group").slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        autoplay: true,
-        autoplaySpeed: 3000,
+  //   $(document).ready(function () {
+  //     $(".card-group").slick({
+  //       dots: true,
+  //       infinite: true,
+  //       speed: 300,
+  //       slidesToShow: 3,
+  //       slidesToScroll: 2,
+  //       autoplay: true,
+  //       autoplaySpeed: 3000,
 
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 844,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: true,
-            },
-          },
-          {
-            breakpoint: 660,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 390,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: false,
-              dots: true,
+  //       responsive: [
+  //         {
+  //           breakpoint: 1024,
+  //           settings: {
+  //             slidesToShow: 3,
+  //             slidesToScroll: 1,
+  //             infinite: true,
+  //             dots: true,
+  //           },
+  //         },
+  //         {
+  //           breakpoint: 844,
+  //           settings: {
+  //             slidesToShow: 2,
+  //             slidesToScroll: 2,
+  //             infinite: true,
+  //             dots: true,
+  //           },
+  //         },
+  //         {
+  //           breakpoint: 660,
+  //           settings: {
+  //             slidesToShow: 1,
+  //             slidesToScroll: 1,
+  //           },
+  //         },
+  //         {
+  //           breakpoint: 390,
+  //           settings: {
+  //             slidesToShow: 1,
+  //             slidesToScroll: 1,
+  //             arrows: false,
+  //             dots: true,
 
-            },
-          },
-        ],
-      });
-    });
-  </script>
+  //           },
+  //         },
+  //       ],
+  //     });
+  //   });
+  // </script>
 </body>
 
 </html>

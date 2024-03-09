@@ -1,137 +1,175 @@
+@use "_index" as *;
 
-@use '_index' as *;
-
-*{
-    padding: 0 !important;
-    margin: 0 !important;
+* {
+  padding: 0 !important;
+  margin: 0 !important;
 }
-
 
 // @use '../SCSS/extend' as *;
 
-   
 /* ----bg-img section---- */
 
-#background-img-sec-1{
-   @include height(1000);
-    // background-color: $black-color;
-    // background-color: black;
+#background-img-sec-1 {
+  @include height(1000);
+  background-color: $black-color;
 }
 /* ----nav and home-section---- */
-#nav-home-section{
-    position: absolute;
-    top: 0  !important;
-   z-index: 10;
+#nav-home-section {
+  position: absolute;
+  top: 0 !important;
+  z-index: 10;
 }
 
 /* ----logo---- */
 
-.navbar-brand{
-    align-items: center;
+.navbar-brand {
+  align-items: center;
 }
 
-.logo-text{
-    font-size:map-get($f-size-zone, suc);
-    letter-spacing: 1px;
-    line-height: 46px;
-    color: $fefe;
-    font-family: $font-stack !important;
-    font-style: italic;
+.logo-text {
+  font-size: map-get($f-size-zone, suc);
+  letter-spacing: 1px;
+  line-height: 46px;
+  color: $fefe;
+  font-family: $font-stack !important;
+  font-style: italic;
 }
 
 /* ----home-section---- */
 
-// %padding{
-//     padding-left: 80px ;
-//     padding-right: 80px;
-// }
-#home-section{
+#home-section {
   padding: 50px 80px 120px 80px !important;
-   }
+}
 
 .nav-item {
-    padding: 10px !important;
-  
-    .nav-text {
-      letter-spacing: 0px;
-      line-height: 25px;
-      color: $fefe;
-      @include fonts(500, 18);
-  
-      /* Default border style (transparent) */
-      border-bottom: 3px solid transparent;
-      transition: border-bottom-color 0.3s ease, transform 0.3s ease;
-    }
-  
-    &:hover .nav-text {
-      color: $hov-red !important;
-  
-      /* Visible border on hover */
-      border-bottom-color: #e62646;
-      transform: scale(1.2) translateY(-1px);
-    }
+  padding: 10px !important;
+
+  .nav-text {
+    letter-spacing: 0px;
+    line-height: 25px;
+    color: $fefe;
+    @include fonts(500, 18);
+
+    /* Default border style (transparent) */
+    border-bottom: 3px solid transparent;
+    transition: border-bottom-color 0.3s ease, transform 0.3s ease;
   }
-  .nav-item a{
-    padding: 10px !important;
+
+  &:hover .nav-text {
+    color: $hov-red !important;
+
+    /* Visible border on hover */
+    border-bottom-color: #e62646;
+    transform: scale(1.2) translateY(-1px);
+  }
 }
-%padding{
-    padding-left: 80px !important;
-    padding-right: 80px!important;
+.carousel-item img{
+  width: 100% !important;
+}
+.nav-item a {
+  padding: 10px !important;
 }
 
-  .home-head-sec{
- @extend %padding;
- display: flex;
- @include justify-c;
-  }
-  .home-head-sec-one{
-    padding-top: 0%;
-    .home-t-one{
-        letter-spacing: 2px;
-        line-height: 70px;
-        color: $fefe;
-        text-align: center;
-        @include fonts(800, 80);
-            }
-  }
-.home-head-sec-two{
+%padding {
+  padding-left: 80px !important;
+  padding-right: 80px !important;
+}
+
+.home-head-sec {
+  @extend %padding;
+  display: flex;
+  @include justify-c;
+}
+
+.home-head-sec-one {
+  padding-top: 0%;
+  .home-t-one {
     letter-spacing: 2px;
-    // line-height: 70px;
+    line-height: 70px;
     color: $fefe;
-    text-align: center;
-    @include fonts(500, 30);
-    padding-top: 40px !important;
-    padding-bottom: 65px !important;
+    @include textalign-c;
+    @include fonts(800, 80);
+  }
 }
-.home-button-part{
-@include justify(center);
+
+.home-head-sec-two {
+  letter-spacing: 2px;
+  // line-height: 70px;
+  color: $fefe;
+  @include textalign-c;
+  @include fonts(500, 30);
+  padding-top: 40px !important;
+  padding-bottom: 65px !important;
 }
-.home-head-sec-button{
-letter-spacing: 1px;
-color: $fefe;
-text-align: center;
-@include fonts(500, 18);
-width: 210px;
-height: 41px;
-border-radius: 20px;
-background-color: #e62646;
-border: none;
+
+.home-button-part {
+  @include justify(center);
+}
+
+.home-head-sec-button {
+  letter-spacing: 1px;
+  color: $fefe;
+  @include textalign-c;
+  @include fonts(500, 18);
+  @include h-w(41, 210);
+  border-radius: 20px;
+  background-color: map-get($theme-colors, danger);
+  border: none;
 }
 
 /* ----Dots for slick slider---- */
 
-.slick-dots li button{
+.slick-dots {
+  li {
+    margin: 0 0.25rem !important;
+    @include h-w(0, 40);
+    bottom: 215px;
+  }
 
+  button {
+    display: block;
+    padding: 15px !important; /* Increased gap */
+    border: 3px solid rgb(255, 255, 255) !important;
+    border-radius: 100%;
+    background-color: transparent; /* Set to transparent */
+    box-sizing: border-box; /* Include padding in the width and height */
+    text-indent: -9999px;
+    position: relative;
+  }
+
+  button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px !important;
+    left: 5px !important;
+    width: 85%; /* Smaller white circle */
+    height: 85%; /* Smaller white circle */
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255); /* Match the button color */
+    transform: translateZ(-1px); /* Move behind the button */
+    opacity: 1 !important;
+  }
+
+  li.slick-active button {
+    border: 3px solid $hov-red !important;
+  }
+
+  li.slick-active button:before {
+    background-color: map-get(
+      $theme-colors,
+      danger
+    ); /* Change color on activation */
+  }
 }
-#slick-slide-control00{
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: #ffffff; 
+
+/* ----SERVICE SECTION---- */
+
+%padding{
+  padding-left: 80px !important;
+  padding-right: 80px!important;
 }
-.slick-dots-t{
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: #ffffff; 
+
+.Services-section{
+  
 }

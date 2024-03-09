@@ -21,9 +21,14 @@
 }
 
 @mixin h-w($height,$width){
-    height: $height + px;
-    width: $width + px;
+    height: $height + px !important;
+    width: $width + px !important;
 }
+@mixin hh-ww($heightt,$widthh){
+    height: $heightt !important;
+    width: $widthh !important;
+}
+
 // for text align and justfy 
 
 @mixin  textalign($value){
