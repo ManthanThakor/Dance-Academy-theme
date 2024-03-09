@@ -170,6 +170,46 @@
   padding-right: 80px!important;
 }
 
-.Services-section{
-  
+#Services-section{
+  @extend %padding;
+  @include pad-t-b(80px,80px);
+  @include box(light);
+}
+
+%service-h-w{
+  @include h-w(455,344);
+}
+.service-section-one{
+  @extend %service-h-w;
+  background-color: map-get($theme-colors,   secondary);;
+}
+#service-img{
+  @include h-w(110,120);
+}
+.service-one-img{
+  @include justify-c;
+}
+
+#service-line::before, #service-line::after {
+  content: "";
+  display: inline-block;
+  width: 142.5px;
+  background: #000000;
+  height: 3px;
+}
+
+// width: 73px;
+// height: 3px;
+// background-color: #000000;
+.service-section-two{
+  @extend %service-h-w;
+  background-color: map-get($theme-colors,   secondary);;
+}
+.service-section-three{
+  @extend %service-h-w;
+  background-color: map-get($theme-colors,   secondary);;
+}
+.service-section-four{
+  @extend %service-h-w;
+  background-color: map-get($theme-colors,   secondary);;
 }

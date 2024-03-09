@@ -1,0 +1,10 @@
+@function calculateWidth($columns) {
+    $columnWidth: 100px; // Set the width of each column
+  
+    @return $columns * $columnWidth;
+  }
+  
+  // Use the function to set the width of an element with 3 columns
+//   .element {
+//     width: calculateWidth(3);
+//   }

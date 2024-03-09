@@ -39,6 +39,25 @@ text-align: $value;
     justify-content: $value;
 }
 
+// padding 
+
+@mixin padd($p){
+    padding: $p $p $p $p  !important;
+}
+
+@mixin pad-t($pp){
+    padding-top: $pp !important;
+}
+
+@mixin pad-b($pp){
+    padding-bottom: $pp !important;
+}
+
+@mixin pad-t-b($ppp, $pppp){
+    padding-top: $ppp !important;
+    padding-bottom: $pppp !important;
+}
+
 // for text align and justfy  center
 
 @mixin  textalign-c{

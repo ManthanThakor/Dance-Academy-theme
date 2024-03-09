@@ -22,7 +22,6 @@
 }
 
 .logo-text {
-  font-size: 30px;
   letter-spacing: 1px;
   line-height: 46px;
   color: #fefefe;
@@ -64,7 +63,7 @@
   padding: 10px !important;
 }
 
-.home-head-sec {
+#Services-section, .home-head-sec {
   padding-left: 80px !important;
   padding-right: 80px !important;
 }
@@ -156,7 +155,52 @@
 }
 
 /* ----SERVICE SECTION---- */
-.home-head-sec {
+#Services-section, .home-head-sec {
   padding-left: 80px !important;
   padding-right: 80px !important;
+}
+
+#Services-section {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+  background-color: #ffffff;
+}
+
+.service-section-four, .service-section-three, .service-section-two, .service-section-one {
+  height: 455px !important;
+  width: 344px !important;
+}
+
+.service-section-one {
+  background-color: #9e9e9e;
+}
+
+#service-img {
+  height: 110px !important;
+  width: 120px !important;
+}
+
+.service-one-img {
+  display: flex;
+  justify-content: center;
+}
+
+#service-line::before, #service-line::after {
+  content: "";
+  display: inline-block;
+  width: 142.5px;
+  background: #000000;
+  height: 3px;
+}
+
+.service-section-two {
+  background-color: #9e9e9e;
+}
+
+.service-section-three {
+  background-color: #9e9e9e;
+}
+
+.service-section-four {
+  background-color: #9e9e9e;
 }/*# sourceMappingURL=main.css.map */
