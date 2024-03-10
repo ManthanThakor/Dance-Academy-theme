@@ -2,14 +2,18 @@ $black-color:#000000;
 $fefe: #fefefe;
 $hov-red:#e62646;
 $font-stack: "Brush Script Std" ;
+$font-stack-two: "Raleway" ;
 $border-radius: 4px !default;
 $font-size: 16px;
+$font-size-two: 18px;
 
 $theme-colors: (
-  primary: #3498db,
+  primary:#ffffff ,
   secondary: #9e9e9e,
   secondary-two:#b8b8b8,
-  danger:  #e62646
+  secondary-three:#bdbdbd,
+  danger:  #e62646,
+  cool:#18aebf
 );
 
 $theme-padding:(
@@ -26,7 +30,7 @@ $f-size-zone:(
 
 
 
-// .button-primary {
+// . {
 //   background-color: map-get($theme-colors, primary);
 // }
 

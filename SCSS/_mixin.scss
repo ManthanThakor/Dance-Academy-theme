@@ -5,8 +5,22 @@
     font-family: "Raleway" !important;
     font-weight: $weight !important;
     font-size: $size + px ;
-    
   }
+
+  @mixin font-part($values){
+    @if $values == xxl{
+        font-size: 50px !important;
+    }
+    @else  if $values == xl{
+        font-size: 40px !important;
+    }
+    @else if $values == md{
+        font-size: 35px !important;
+    }
+    @else{
+        font-size: 20px !important;
+    }
+}
 
 //   for height 
 
@@ -41,8 +55,8 @@ text-align: $value;
 
 // padding 
 
-@mixin padd($p){
-    padding: $p $p $p $p  !important;
+@mixin padd($p-t,$p-r,$p-b,$p-l ){
+    padding: $p-t $p-r $p-b $p-l  !important;
 }
 
 @mixin pad-t($pp){
@@ -63,6 +77,7 @@ text-align: $value;
 @mixin  textalign-c{
 text-align: center;
 }
+
 @mixin justify-c{
     display: flex;
     justify-content: center;
@@ -77,4 +92,16 @@ text-align: center;
     @else  if $value == light {
         background-color: #ffffff;
     }
+}
+
+// display
+
+@mixin dis($dis){
+display: $dis;
+}
+
+//positon 
+
+@mixin pos($pos){
+    position: $pos;
 }

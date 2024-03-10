@@ -25,29 +25,26 @@
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
 </head>
 
 <body>
-
   <!-- nav part + background-part -->
   <div class="navbar-part" style="height: 1000px">
     <!-- background-part -->
-    <div class=" slick-slider-container bg-img" style="width:100%; height: 1000px;">
-      <div class=" carousel-item" style="width: fit-content;">
+    <div class="slick-slider-container bg-img" style="width: 100%; height: 1000px">
+      <div class="carousel-item" style="width: fit-content">
         <img src="imgs/background-img/dancer_theme_background.png" class=""
-          style="height: 1000px; background-color: black;" id="background-img-sec-1" alt="...">
+          style="height: 1000px; background-color: black" id="background-img-sec-1" alt="..." />
       </div>
       <div class="carousel-item">
         <img src="imgs/background-img/dancer_theme_background.png" class="" id="background-img-sec-1"
-          style="height: 1000px; background-color: black;" alt="...">
+          style="height: 1000px; background-color: black" alt="..." />
       </div>
       <div class="carousel-item">
         <img src="imgs/background-img/dancer_theme_background.png" class="" id="background-img-sec-1"
-          style=" height: 1000px; background-color: black;" alt="...">
+          style="height: 1000px; background-color: black" alt="..." />
       </div>
     </div>
-
 
     <!-- home-section -->
     <div class="container-fluid" id="nav-home-section">
@@ -55,16 +52,18 @@
         <div class="container-fluid" id="home-section">
           <div class="logo-section">
             <a class="navbar-brand d-flex flex-column" href="dance.html">
-              <img src="imgs/logo/dance-academy-logo.png" alt="" width="100px" height="120px" class="logo">
+              <img src="imgs/logo/dance-academy-logo.png" alt="" width="100px" height="120px" class="logo" />
               <p class="logo-text">Dance Academy</p>
             </a>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon"><img src="Imgs/images.png" id="burger-img">
-            </span></button>
-
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="Imgs/images.png" id="burger-img" />
+            </span>
+          </button>
+          <!-- navbar section -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
               <li class="nav-item">
                 <a class="nav-link nav-text" href="#head">Home</a>
@@ -100,62 +99,154 @@
           <h1 class="text-uppercase home-t-one">let's dance with us</h1>
           <p class="home-head-sec-two">and hold your beloved moments</p>
           <div class="home-button-part">
-            <button class="home-head-sec-button" id="home-btn">Register Now</button>
+            <button class="home-head-sec-button" id="home-btn">
+              Register Now
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- ------------------------------------------------------ -->
+
   <!-- Services-section -->
 
   <div class="container-fluid" id="Services-section">
     <div class="row Services-section-row">
+      <!-- service no 1 -->
       <div class="col-xxl-3 service-section-one">
-        <div class="service-one-img">
-          <img src="imgs/services/ballroom.png" id="service-img" alt="ballroom">
+        <div class="main-part">
+          <div class="service-one-img">
+            <img src="imgs/services/ballroom.png" id="service-img" alt="ballroom" />
+          </div>
+          <div class="service-line">
+            <div id="service-line"></div>
+          </div>
+          <div class="service-title">
+            <h5 class="text-uppercase">Ballroom Dance</h5>
+          </div>
         </div>
-        <div class="service-line">
-          <div id="service-line"></div>
+        <!-- hover part on service -->
+        <div class="service-body">
+          <h1>
+            5<span id="service-body-one">0</span><span id="service-body-two">+</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            euismod arcu euismod nibh tincidunt.
+          </p>
         </div>
-
-        <h5 class="card-title text-capitalize card_heading">Ballroom Dance</h5>
-        <p class="card_text "><span class="mx-auto">50+</span> Some quick example text to build on the card title and
-          make up the bulk of the card's content.</p>
-        <div class="tringle_cut"></div>
+        <div class="crop-part"></div>
       </div>
+
+      <!-- service no 2 -->
+
       <div class="col-xxl-3 service-section-two">
-        <img src=""  id="service-img" alt="...">
+        <div class="main-part">
+          <div class="service-one-img">
+            <img src="imgs/services/bollywood.png" id="service-img" alt="ballroom" />
+          </div>
+          <div class="service-line">
+            <div id="service-line"></div>
+          </div>
+          <div class="service-title">
+            <h5 class="text-uppercase">BOLLYWOOD DANCE</h5>
+          </div>
+        </div>
 
-        <h5 class="card-title text-capitalize card_heading">Ballroom Dance</h5>
-        <p class="card_text"><span class="mx-auto">50+</span> Some quick example text to build on the card title and
-          make up the bulk of the card's content.</p>
-        <div class="tringle_cut"></div>
+        <!-- hover part on service -->
+        <div class="service-body">
+          <h1>
+            5<span id="service-body-one">0</span><span id="service-body-two">+</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            euismod arcu euismod nibh tincidunt.
+          </p>
+        </div>
+        <div class="crop-part"></div>
       </div>
+
+      <!-- service no 3 -->
+
       <div class="col-xxl-3 service-section-three">
-        <img src=""  id="service-img" alt="...">
-
-        <h5 class="card-title text-capitalize card_heading">Ballroom Dance</h5>
-        <p class="card_text"><span class="mx-auto">50+</span> Some quick example text to build on the card title and
-          make up the bulk of the card's content.</p>
-        <div class="tringle_cut"></div>
+        <div class="main-part">
+          <div class="service-one-img">
+            <img src="imgs/services/dancing-motion.png" id="service-img" alt="ballroom" />
+          </div>
+          <div class="service-line">
+            <div id="service-line"></div>
+          </div>
+          <div class="service-title">
+            <h5 class="text-uppercase">BROADWAY DANCE</h5>
+          </div>
+        </div>
+        <!-- hover part on service -->
+        <div class="service-body">
+          <h1>
+            5<span id="service-body-one">0</span><span id="service-body-two">+</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            euismod arcu euismod nibh tincidunt.
+          </p>
+        </div>
+        <div class="crop-part"></div>
       </div>
+      <!-- service no 4 -->
       <div class="col-xxl-3 service-section-four">
-        <img src="" id="service-img" alt="...">
-
-        <h5 class="card-title text-capitalize card_heading">Ballroom Dance</h5>
-        <p class="card_text"><span class="mx-auto">50+</span> Some quick example text to build on the card title and
-          make up the bulk of the card's content.</p>
-        <div class="tringle_cut"></div>
+        <div class="main-part">
+          <div class="service-one-img">
+            <img src="imgs\services\jumping-dancer-.png" id="service-img" alt="ballroom" />
+          </div>
+          <div class="service-line">
+            <div id="service-line"></div>
+          </div>
+          <div class="service-title">
+            <h5 class="text-uppercase">HIP HOP DANCE</h5>
+          </div>
+        </div>
+        <!-- hover part on service -->
+        <div class="service-body">
+          <h1>
+            5<span id="service-body-one">0</span><span id="service-body-two">+</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            euismod arcu euismod nibh tincidunt.
+          </p>
+        </div>
+        <div class="crop-part"></div>
       </div>
     </div>
   </div>
 
+  <!-- ------------------------------------------- -->
 
+  <!--------------- ABOUT US SECTION ------------ -->
 
- 
-
-
+  <div class="container-fluid about-us-part">
+    <div class="row about-us-part-row">
+      <div class="col-md-3 about-us-img">
+        <img src="imgs\About us\Layer 9.png" alt="ABOUT US" class="about-us-img-part" />
+      </div>
+      <div class="col-md-9 about-us-body">
+        <div id="about-us-body-part">
+          <div>
+            <p>DANCE IS THE HIDDEN LANGUAGE OF SOULS</p>
+          </div>
+          <p class="artist-p">
+            Fusce euismod at ipsum elementum mattis. Mauris ultricies leo at
+            rhoncus consequat. Nunc esque euimod odio alina quis vehila.Morbi
+            vestibulum fringilla ut tristique massa commoddi an the best
+            mattis. Mauri ipsum
+          </p>
+          <button>Free Membership</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ----------------------- LIBRARIES-PART ------------------------- -->
 
@@ -167,7 +258,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-
 
   <!--  Custom scripts slick slider for this template -->
 
@@ -182,26 +272,22 @@
   <!-- ============SCRIPT FOR ANIMATION=============== -->
 
   <script>
-    AOS.init(
-      {
-        duration: 1000,
-        once: true,
-
-      }
-    );
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
   </script>
 
   <!-- ============SCRIPT FOR slick slider=============== -->
   <script>
     $(document).ready(function () {
-      $('.slick-slider-container').slick({
+      $(".slick-slider-container").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         // autoplay: true,
         // autoplaySpeed: 2000,
         dots: true,
         arrows: false,
-
 
         // prevArrow: '<button type="button" id="slick-prev" class="slick-prev"><img src="Imgs/image-removebg-preview (2).png" style="height: 45px;width: 40px;" id="nextbutton-slick" /></button>',
         // nextArrow: '<button type="button" id="slick-next" class="slick-next"><img src="Imgs/image-removebg-preview (3).png" style="height: 45px ;width: 40px;"  id="prevbutton-slick"/></button>',
@@ -258,7 +344,8 @@
     //       ],
     //     });
     //   });
-    // </script>
+    //
+  </script>
 </body>
 
 </html>
