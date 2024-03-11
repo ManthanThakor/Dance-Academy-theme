@@ -126,11 +126,14 @@
 }
 .slick-dots button {
   display: block;
-  padding: 15px !important; /* Increased gap */
+  padding: 15px !important;
+  /* Increased gap */
   border: 3px solid rgb(255, 255, 255) !important;
   border-radius: 100%;
-  background-color: transparent; /* Set to transparent */
-  box-sizing: border-box; /* Include padding in the width and height */
+  background-color: transparent;
+  /* Set to transparent */
+  box-sizing: border-box;
+  /* Include padding in the width and height */
   text-indent: -9999px;
   position: relative;
 }
@@ -140,18 +143,23 @@
   position: absolute;
   top: 4px !important;
   left: 5px !important;
-  width: 85%; /* Smaller white circle */
-  height: 85%; /* Smaller white circle */
+  width: 85%;
+  /* Smaller white circle */
+  height: 85%;
+  /* Smaller white circle */
   border-radius: 100%;
-  background-color: rgb(255, 255, 255); /* Match the button color */
-  transform: translateZ(-1px); /* Move behind the button */
+  background-color: rgb(255, 255, 255);
+  /* Match the button color */
+  transform: translateZ(-1px);
+  /* Move behind the button */
   opacity: 1 !important;
 }
 .slick-dots li.slick-active button {
   border: 3px solid #e62646 !important;
 }
 .slick-dots li.slick-active button:before {
-  background-color: #e62646; /* Change color on activation */
+  background-color: #e62646;
+  /* Change color on activation */
 }
 
 /* ----SERVICE SECTION---- */
@@ -348,10 +356,6 @@
   padding-right: 80px !important;
 }
 
-.about-us-img {
-  width: 29% !important;
-}
-
 .about-us-img-part {
   height: 540px !important;
   width: 400px !important;
@@ -361,9 +365,135 @@
      object-fit: cover;
   -o-object-position: 45%;
      object-position: 45%;
+  z-index: 1;
+  position: relative;
 }
 
 .about-us-body {
   padding-left: -30px !important;
-  width: 71% !important;
+}
+
+#about-us-body-part {
+  padding: 60px 160px 60px 200px !important;
+  background-color: #999999;
+}
+
+.about-us-title {
+  display: flex;
+  justify-content: center;
+}
+.about-us-title p {
+  width: 458px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  color: #000000;
+  text-align: center;
+  font-family: "Raleway" !important;
+  font-weight: 700 !important;
+  font-size: 30px;
+}
+
+.about-us-discription {
+  padding: 40px 0px 50px 0px !important;
+}
+.about-us-discription p {
+  letter-spacing: 1px;
+  color: #fefefe;
+  text-align: center;
+  font-family: "Raleway" !important;
+  font-weight: 400 !important;
+  font-size: 18px;
+}
+
+.about-us-button {
+  display: flex;
+  justify-content: center;
+}
+.about-us-button #about-us-button {
+  letter-spacing: 1px;
+  color: #fefefe;
+  text-align: center;
+  height: 46px !important;
+  width: 238px !important;
+  border-radius: 23px;
+  background-color: #e62646;
+  border: none;
+  font-family: "Raleway" !important;
+  font-weight: 500 !important;
+  font-size: 18px;
+}
+
+/* --DANCE STUDIO SECTION-- */
+.dance-studio-section {
+  padding: 75px 180px 75px 180px !important;
+}
+
+.dance-studio-title {
+  display: flex;
+  justify-content: center;
+}
+.dance-studio-title p {
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: #e62646;
+  text-align: center;
+  font-family: "Raleway" !important;
+  font-weight: 700 !important;
+  font-size: 25px;
+}
+
+.dance-studio-img-part {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0px 60px 0px !important;
+}
+.dance-studio-img-part .dance-studio-img {
+  height: 324px !important;
+  width: 325px !important;
+  border-radius: 162px;
+  background-color: #e62646;
+}
+
+.dance-studio-text-part p {
+  font-family: "Raleway" !important;
+  font-weight: 300 !important;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 27px;
+  color: #1f1f1f;
+  text-align: center;
+}
+
+/* next and prev button */
+#prevbutton-slick {
+  height: 31px !important;
+  width: 98px !important;
+  transform: scaleX(-1);
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 275px;
+  transform: translateY(-50%);
+  top: calc(50% - 56.5px);
+  transform: scaleX(-1);
+}
+
+#nextbutton-slick {
+  height: 31px !important;
+  width: 98px !important;
+  position: absolute;
+  top: 50%;
+  right: 290px;
+  transform: translateY(-185%);
+}
+
+.slick-prev {
+  z-index: 2;
+}
+
+/* client section */
+.client-main-part {
+  background-image: url("imgs/client/Layer 5.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }/*# sourceMappingURL=main.css.map */

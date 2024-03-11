@@ -65,9 +65,11 @@
     transform: scale(1.2) translateY(-1px);
   }
 }
+
 .carousel-item img {
   width: 100% !important;
 }
+
 .nav-item a {
   padding: 10px !important;
 }
@@ -85,6 +87,7 @@
 
 .home-head-sec-one {
   padding-top: 0%;
+
   .home-t-one {
     letter-spacing: 2px;
     line-height: 70px;
@@ -130,11 +133,14 @@
 
   button {
     display: block;
-    padding: 15px !important; /* Increased gap */
+    padding: 15px !important;
+    /* Increased gap */
     border: 3px solid rgb(255, 255, 255) !important;
     border-radius: 100%;
-    background-color: transparent; /* Set to transparent */
-    box-sizing: border-box; /* Include padding in the width and height */
+    background-color: transparent;
+    /* Set to transparent */
+    box-sizing: border-box;
+    /* Include padding in the width and height */
     text-indent: -9999px;
     @include pos(relative);
   }
@@ -145,11 +151,15 @@
     @include pos(absolute);
     top: 4px !important;
     left: 5px !important;
-    width: 85%; /* Smaller white circle */
-    height: 85%; /* Smaller white circle */
+    width: 85%;
+    /* Smaller white circle */
+    height: 85%;
+    /* Smaller white circle */
     border-radius: 100%;
-    background-color: rgb(255, 255, 255); /* Match the button color */
-    transform: translateZ(-1px); /* Move behind the button */
+    background-color: rgb(255, 255, 255);
+    /* Match the button color */
+    transform: translateZ(-1px);
+    /* Move behind the button */
     opacity: 1 !important;
   }
 
@@ -158,10 +168,8 @@
   }
 
   li.slick-active button:before {
-    background-color: map-get(
-      $theme-colors,
-      danger
-    ); /* Change color on activation */
+    background-color: map-get($theme-colors, danger);
+    /* Change color on activation */
   }
 }
 
@@ -181,13 +189,16 @@
 %service-h-w {
   @include h-w(455, 344);
 }
+
 .service-section-one {
   @extend %service-h-w;
   background-color: map-get($theme-colors, secondary);
 }
+
 #service-img {
   @include h-w(110, 120);
 }
+
 .service-one-img {
   @include justify-c;
   padding-top: 130px !important;
@@ -199,6 +210,7 @@
   @include justify-c;
   @include pad-t-b(5px, 25px);
 }
+
 #service-line::before,
 #service-line::after {
   content: "";
@@ -216,12 +228,14 @@
     @include textalign-c;
     @include fonts(700, 18);
   }
+
   padding-bottom: 130px !important;
 }
 
 .service-body {
   @include pos(relative);
   display: none;
+
   h1 {
     @include pad-t-b(20px, 20px);
     letter-spacing: 2px;
@@ -233,18 +247,21 @@
     font-style: italic;
     font-weight: 700;
   }
+
   #service-body-one {
     @include pos(relative);
     top: -7px;
     font-weight: 700;
     @include font-part(xl);
   }
+
   #service-body-two {
     @include pos(relative);
     top: -13px;
     @include font-part(xl);
     font-weight: 1000;
   }
+
   p {
     @include padd(0, 30px, 30px, 30px);
     font-size: $font-size-two;
@@ -254,6 +271,7 @@
     @include textalign-c;
   }
 }
+
 .crop-part {
   width: 0;
   height: 0;
@@ -274,16 +292,20 @@
   to {
     transform: scale(1, 1);
   }
+
   25% {
     transform: scale(0.9, 1.1);
   }
+
   50% {
     transform: scale(1.1, 0.9);
   }
+
   75% {
     transform: scale(0.95, 1.05);
   }
 }
+
 .service-section-one,
 .service-section-two,
 .service-section-three,
@@ -292,6 +314,7 @@
     .service-body {
       @include dis(block);
     }
+
     transform: scale(1.1);
     background-color: map-get($theme-colors, danger);
     transition: all 0.3s ease-in-out 0.1s;
@@ -300,16 +323,20 @@
     .service-title {
       padding: 0px !important;
     }
+
     .service-one-img {
       @include pad-t(30px);
       transition: all 0.3s ease-in-out 0.1s;
     }
+
     .text-uppercase {
       color: map-get($theme-colors, primary);
     }
+
     #service-img {
       animation: bouncing 0.5s 0.3s;
     }
+
     .crop-part {
       @include dis(block);
     }
@@ -327,6 +354,7 @@
   @extend %service-h-w;
   background-color: map-get($theme-colors, secondary);
 }
+
 .service-section-four {
   @extend %service-h-w;
   background-color: map-get($theme-colors, secondary-two);
@@ -345,19 +373,131 @@
   @extend %padding;
 }
 
-.about-us-img{
-  width: 29% !important;
-}
-
 .about-us-img-part {
   @include h-w(540, 400);
   background-color: map-get($theme-colors, cool);
   border: 10px solid map-get($theme-colors, danger);
   object-fit: cover;
   object-position: 45%;
+  z-index: 1;
+  position: relative;
 }
 
-.about-us-body{
+.about-us-body {
   padding-left: -30px !important;
-  width: 71% !important;
 }
+
+#about-us-body-part {
+  @include padd(60px, 160px, 60px, 200px);
+  background-color: map-get($theme-colors, secondary-four);
+}
+
+.about-us-title {
+  @include justify-c;
+
+  p {
+    width: 458px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: $black-color;
+    @include textalign-c;
+    @include fonts(700, 30);
+  }
+}
+
+.about-us-discription {
+  @include padd(40px, 0px, 50px, 0px);
+
+  p {
+    letter-spacing: 1px;
+    color: $fefe;
+    @include textalign-c;
+    @include fonts(400, 18);
+  }
+}
+
+.about-us-button{
+  @include justify-c;
+#about-us-button{
+  letter-spacing: 1px;
+  color: $fefe;
+  @include textalign-c;
+  @include h-w(46,238);
+  border-radius: 23px;
+  background-color: $hov-red;
+  border: none;
+  @include fonts(500, 18);
+}
+}
+
+/* --DANCE STUDIO SECTION-- */ 
+
+.dance-studio-section{
+  @include padd(75px, 180px, 75px, 180px);
+}
+
+.dance-studio-title{
+  @include justify-c;
+  p{
+letter-spacing: 1px;
+line-height: 25px;
+color: $hov-red;
+@include textalign-c;
+@include fonts(700, 25);
+  }
+}
+
+.dance-studio-img-part{
+  @include justify-c;
+  @include padd(60px, 0px, 60px, 0px);
+  .dance-studio-img{
+  @include h-w(324,325);
+  border-radius: 162px;
+  background-color: $hov-red;
+  }
+}
+
+.dance-studio-text-part{
+  p{
+    @include fonts(300, 16);
+    letter-spacing: 0px;
+    line-height: 27px;
+    color: #1f1f1f;
+    @include textalign-c;
+  }
+}
+
+/* next and prev button */ 
+
+#prevbutton-slick {
+  @include h-w(31, 98);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  @include pos(absolute);
+  z-index: 1;
+  top: 50%;
+  left: 275px; 
+  transform: translateY(-50%);
+  top: calc(50% - 56.5px);
+  transform: scaleX(-1);
+}
+
+#nextbutton-slick {
+  @include h-w(31, 98);
+  @include pos(absolute);
+  top: 50%; 
+  right: 290px;
+  transform: translateY(-185%);
+}
+
+.slick-prev {
+  z-index: 2;
+}
+
+/* client section */ 
+
+.client-main-part{
+    background-image: url("imgs/client/Layer 5.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
