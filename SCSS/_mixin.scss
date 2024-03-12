@@ -32,6 +32,10 @@
   width: $width + px;
 }
 
+@mixin width-pers($widthh){
+    width: $widthh;
+}
+
 @mixin h-w($height, $width) {
   height: $height + px !important;
   width: $width + px !important;

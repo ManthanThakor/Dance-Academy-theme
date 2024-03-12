@@ -587,8 +587,8 @@
     @include textalign-c;
     @include fonts(500, 18);
   }
-  .upcoming-event-body-parts-three{
-    @include textalign-c; 
+  .upcoming-event-body-parts-three {
+    @include textalign-c;
   }
   #upcoming-event-body-parts-three {
     letter-spacing: 1px;
@@ -650,28 +650,143 @@
   }
 }
 
-#eve-btn:hover , #about-us-button:hover,#home-btn:hover{
-  transition:all 0.8s, color 0.3s 0.3s; 
-  cursor:pointer; 
-  color:#ffffff;
+#eve-btn:hover,
+#about-us-button:hover,
+#home-btn:hover,
+.footer-btn:hover {
+  transition: all 0.8s, color 0.3s 0.3s;
+  cursor: pointer;
+  color: #ffffff;
 
   border: solid 1px #000000;
   border-width: 1px;
   background: linear-gradient(to right, red, purple);
-@include box-shadow;
+  @include box-shadow;
 }
 
-%shadoww{
-  cursor:pointer; 
+%shadoww {
+  cursor: pointer;
   color: $fefe;
   @include text-shadow;
 }
-#upcoming-event-body-parts-three:hover{
-@extend %shadoww;
-}
-.read-more-event p:hover{
+#upcoming-event-body-parts-three:hover {
   @extend %shadoww;
 }
-#fonts-event:hover{
+.read-more-event p:hover {
   @extend %shadoww;
+}
+#fonts-event:hover {
+  @extend %shadoww;
+}
+
+/* -- footer-part -- */
+
+.footer-section {
+  @include padd(60px, 80px, 60px, 80px);
+  @include box(dark);
+}
+
+.footer-head {
+  @include padd(0, 0, 30px, 0);
+
+  .footer-title {
+    letter-spacing: 1px;
+    color: $hov-red;
+    @include fonts(700, 25);
+  }
+}
+.foot-name {
+  border-radius: 15px;
+  border: 1px solid map-get($theme-colors, secondary-three);
+  background-color: $black-color;
+  @include width-pers(90%);
+  margin: 10px 0 !important;
+  padding: 4px 15px !important;
+  font-style: italic;
+  color: #fff;
+  outline: none;
+}
+.foot-email,
+.foot-numb,
+.foot-message {
+  @extend .foot-name;
+}
+
+.foot-button{
+  margin-top: 20px !important;
+  .footer-btn {
+    letter-spacing: 1px;
+    color: map-get($theme-colors, primary);
+    font-family: $font-stack-three;
+    font-size: $font-size-two;
+    @include h-w(36, 130);
+    border-radius: 18px;
+    background-color: map-get($theme-colors, danger);
+    border: none;
+  }
+}
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-address-section,.footer-mail-section,.footer-number-section{
+@extend %flex-row;
+@include padd(30px,0,0,0px);
+}
+
+%shadoww {
+  cursor: pointer;
+  color: $fefe;
+  @include text-shadow;
+}
+#foot-icons-part{
+  font-size: 25px !important;
+  color: $fefe;
+  &:hover{
+    @extend %shadoww;
+  }
+}
+
+%details-footer{
+letter-spacing: 1px;
+line-height: 25px;
+color: $fefe;
+@include fonts(200, 18);
+@include padd(0,0,0,20px);
+}
+
+#add-dis{
+@extend %details-footer;
+}
+#mail-dis{
+  @extend %details-footer;
+}
+#num-dis{
+  @extend %details-footer;
+}
+
+/* --copyright-part-- */ 
+
+.copyright-section{
+@include padd(20px,80px,20px,80px);
+@extend %flex-row;
+}
+
+.copy-right-text{
+p{
+font-size: 16px;
+letter-spacing: 0px;
+line-height: 35px;
+color: #ffffff;
+font-weight: 600;
+font-family: "Open Sans";
+}
+
+}
+
+.copyright-fonts{
+display: flex;
+margin-left: auto !important;
 }

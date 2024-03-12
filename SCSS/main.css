@@ -660,7 +660,10 @@
   border: none;
 }
 
-#eve-btn:hover, #about-us-button:hover, #home-btn:hover {
+#eve-btn:hover,
+#about-us-button:hover,
+#home-btn:hover,
+.footer-btn:hover {
   transition: all 0.8s, color 0.3s 0.3s;
   cursor: pointer;
   color: #ffffff;
@@ -670,9 +673,104 @@
   box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.16) inset, 0px 0px 15px 0px #030303;
 }
 
-#fonts-event:hover, .read-more-event p:hover, #upcoming-event-body-parts-three:hover {
+#foot-icons-part:hover, #fonts-event:hover, .read-more-event p:hover, #upcoming-event-body-parts-three:hover {
   cursor: pointer;
   color: #fefefe;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a19b9e, 0 0 40px #4e4a4c, 0 0 50px #e60073, 0 0 60px #393738, 0 0 70px #96848d;
   color: #ffffff;
+}
+
+/* -- footer-part -- */
+.footer-section {
+  padding: 60px 80px 60px 80px !important;
+  background-color: #000000;
+}
+
+.footer-head {
+  padding: 0 0 30px 0 !important;
+}
+.footer-head .footer-title {
+  letter-spacing: 1px;
+  color: #e62646;
+  font-family: "Raleway" !important;
+  font-weight: 700 !important;
+  font-size: 25px;
+}
+
+.foot-name, .foot-email,
+.foot-numb,
+.foot-message {
+  border-radius: 15px;
+  border: 1px solid #bdbdbd;
+  background-color: #000000;
+  width: 90%;
+  margin: 10px 0 !important;
+  padding: 4px 15px !important;
+  font-style: italic;
+  color: #fff;
+  outline: none;
+}
+
+.foot-button {
+  margin-top: 20px !important;
+}
+.foot-button .footer-btn {
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  height: 36px !important;
+  width: 130px !important;
+  border-radius: 18px;
+  background-color: #e62646;
+  border: none;
+}
+
+.copyright-section, .footer-address-section, .footer-mail-section, .footer-number-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-address-section, .footer-mail-section, .footer-number-section {
+  padding: 30px 0 0 0px !important;
+}
+
+#foot-icons-part:hover, #upcoming-event-body-parts-three:hover, .read-more-event p:hover, #fonts-event:hover {
+  cursor: pointer;
+  color: #fefefe;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a19b9e, 0 0 40px #4e4a4c, 0 0 50px #e60073, 0 0 60px #393738, 0 0 70px #96848d;
+  color: #ffffff;
+}
+
+#foot-icons-part {
+  font-size: 25px !important;
+  color: #fefefe;
+}
+#num-dis, #mail-dis, #add-dis {
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: #fefefe;
+  font-family: "Raleway" !important;
+  font-weight: 200 !important;
+  font-size: 18px;
+  padding: 0 0 0 20px !important;
+}
+
+/* --copyright-part-- */
+.copyright-section {
+  padding: 20px 80px 20px 80px !important;
+}
+
+.copy-right-text p {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 35px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+
+.copyright-fonts {
+  display: flex;
+  margin-left: auto !important;
 }/*# sourceMappingURL=main.css.map */
