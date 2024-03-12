@@ -491,9 +491,188 @@
   z-index: 2;
 }
 
-/* client section */
+/* ---client section--- */
 .client-main-part {
-  background-image: url("imgs/client/Layer 5.png");
+  background-image: url("../imgs/client/clientbackground.png");
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-position: bottom;
+  background-size: cover;
+  height: 392px;
+  background-color: #000000;
+  background-position: 60% 70%;
+}
+
+.client-img-part {
+  height: 392px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-img-part img {
+  height: 208px !important;
+  width: 208px !important;
+  border-radius: 104px;
+}
+
+.client-details {
+  padding: 115px 80px 0 0 !important;
+}
+.client-details .client-details-one {
+  padding: 0px 0px 30px 0px !important;
+  line-height: 27px;
+  color: #ffffff;
+  font-family: "Raleway" !important;
+  font-weight: 500 !important;
+  font-size: 16px;
+}
+.client-details .client-name {
+  color: #e62646;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Raleway";
+}
+
+.slick-part-three .slick-dots {
+  top: 510px;
+}
+
+/* --UP COMING EVENT-- */
+.up-coming-event-section .up-coming-event-title {
+  display: flex;
+  justify-content: center;
+  padding: 70px 0px 70px 0 !important;
+  letter-spacing: 1px;
+  line-height: 27px;
+  color: #e62646;
+  font-family: "Raleway" !important;
+  font-weight: 700 !important;
+  font-size: 25px;
+}
+
+.part-event {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.event-body-part {
+  position: relative;
+  background-image: url("../imgs/event/ballet-545321_1920.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: #000000;
+  background-position: 60% 40%;
+  height: 295px !important;
+  width: 747px !important;
+  overflow: hidden;
+}
+
+.upcoming-event-body-parts .upcoming-event-body-parts-one, .upcoming-event-body-parts .upcoming-event-body-parts-zero {
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #bdbdbd;
+  text-align: center;
+  font-family: "Raleway" !important;
+  font-weight: 700 !important;
+  font-size: 30px;
+}
+
+.upcoming-event-body-parts .upcoming-event-body-parts-zero {
+  padding-top: 30px !important;
+}
+.upcoming-event-body-parts .upcoming-event-body-parts-two {
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Raleway" !important;
+  font-weight: 500 !important;
+  font-size: 18px;
+}
+.upcoming-event-body-parts .upcoming-event-body-parts-three {
+  text-align: center;
+}
+.upcoming-event-body-parts #upcoming-event-body-parts-three {
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #e62646;
+  font-family: "Raleway" !important;
+  font-weight: 700 !important;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.upcoming-event-body-parts-fonts {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px !important;
+  gap: 10px;
+}
+
+#fonts-event {
+  font-size: 25px !important;
+  color: #fefefe;
+}
+
+.read-more-event {
+  height: 100px !important;
+  width: 200px !important;
+  background-color: #696969;
+  position: absolute;
+  transform: rotate(30deg);
+  left: -65px;
+  top: 236px;
+  display: none;
+}
+.read-more-event p {
+  letter-spacing: 1px;
+  color: #e62646;
+  filter: drop-shadow(2px 3.464px 6.5px rgba(0, 0, 0, 0.75));
+  padding-top: 10px !important;
+  text-align: center;
+  font-family: "Raleway" !important;
+  font-weight: 700 !important;
+  font-size: 18px;
+}
+
+/* --Hover on event */
+.event-body-part:hover .read-more-event {
+  display: block;
+}
+
+.event-button {
+  padding: 60px 0 80px 0 !important;
+}
+.event-button #eve-btn {
+  letter-spacing: 1px;
+  color: #fefefe;
+  text-align: center;
+  font-family: "Raleway" !important;
+  font-weight: 600 !important;
+  font-size: 18px;
+  height: 52px !important;
+  width: 223px !important;
+  border-radius: 26px;
+  background-color: #e62646;
+  border: none;
+}
+
+#eve-btn:hover, #about-us-button:hover, #home-btn:hover {
+  transition: all 0.8s, color 0.3s 0.3s;
+  cursor: pointer;
+  color: #ffffff;
+  border: solid 1px #000000;
+  border-width: 1px;
+  background: linear-gradient(to right, red, purple);
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.16) inset, 0px 0px 15px 0px #030303;
+}
+
+#fonts-event:hover, .read-more-event p:hover, #upcoming-event-body-parts-three:hover {
+  cursor: pointer;
+  color: #fefefe;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a19b9e, 0 0 40px #4e4a4c, 0 0 50px #e60073, 0 0 60px #393738, 0 0 70px #96848d;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

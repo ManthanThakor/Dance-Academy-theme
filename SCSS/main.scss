@@ -416,49 +416,49 @@
   }
 }
 
-.about-us-button{
+.about-us-button {
   @include justify-c;
-#about-us-button{
-  letter-spacing: 1px;
-  color: $fefe;
-  @include textalign-c;
-  @include h-w(46,238);
-  border-radius: 23px;
-  background-color: $hov-red;
-  border: none;
-  @include fonts(500, 18);
-}
+  #about-us-button {
+    letter-spacing: 1px;
+    color: $fefe;
+    @include textalign-c;
+    @include h-w(46, 238);
+    border-radius: 23px;
+    background-color: $hov-red;
+    border: none;
+    @include fonts(500, 18);
+  }
 }
 
-/* --DANCE STUDIO SECTION-- */ 
+/* --DANCE STUDIO SECTION-- */
 
-.dance-studio-section{
+.dance-studio-section {
   @include padd(75px, 180px, 75px, 180px);
 }
 
-.dance-studio-title{
+.dance-studio-title {
   @include justify-c;
-  p{
-letter-spacing: 1px;
-line-height: 25px;
-color: $hov-red;
-@include textalign-c;
-@include fonts(700, 25);
+  p {
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: $hov-red;
+    @include textalign-c;
+    @include fonts(700, 25);
   }
 }
 
-.dance-studio-img-part{
+.dance-studio-img-part {
   @include justify-c;
   @include padd(60px, 0px, 60px, 0px);
-  .dance-studio-img{
-  @include h-w(324,325);
-  border-radius: 162px;
-  background-color: $hov-red;
+  .dance-studio-img {
+    @include h-w(324, 325);
+    border-radius: 162px;
+    background-color: $hov-red;
   }
 }
 
-.dance-studio-text-part{
-  p{
+.dance-studio-text-part {
+  p {
     @include fonts(300, 16);
     letter-spacing: 0px;
     line-height: 27px;
@@ -467,7 +467,7 @@ color: $hov-red;
   }
 }
 
-/* next and prev button */ 
+/* next and prev button */
 
 #prevbutton-slick {
   @include h-w(31, 98);
@@ -476,7 +476,7 @@ color: $hov-red;
   @include pos(absolute);
   z-index: 1;
   top: 50%;
-  left: 275px; 
+  left: 275px;
   transform: translateY(-50%);
   top: calc(50% - 56.5px);
   transform: scaleX(-1);
@@ -485,7 +485,7 @@ color: $hov-red;
 #nextbutton-slick {
   @include h-w(31, 98);
   @include pos(absolute);
-  top: 50%; 
+  top: 50%;
   right: 290px;
   transform: translateY(-185%);
 }
@@ -494,10 +494,184 @@ color: $hov-red;
   z-index: 2;
 }
 
-/* client section */ 
+/* ---client section--- */
 
-.client-main-part{
-    background-image: url("imgs/client/Layer 5.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+.client-main-part {
+  background-image: url("../imgs/client/clientbackground.png");
+  @include backimg(bottom);
+  @include height(392);
+  background-color: $black-color;
+  background-position: 60% 70%;
+}
+
+.client-img-part {
+  @include height(392);
+  @include justify-c;
+  align-items: center;
+  img {
+    @include h-w(208, 208);
+    border-radius: 104px;
   }
+}
+
+.client-details {
+  @include padd(115px, 80px, 0, 0);
+  .client-details-one {
+    @include padd(0px, 0px, 30px, 0px);
+    line-height: 27px;
+    color: map-get($theme-colors, primary);
+    @include fonts(500, 16);
+  }
+  .client-name {
+    color: $hov-red;
+    font-weight: bold;
+    font-size: $font-size-two;
+    font-family: $font-stack-two;
+  }
+}
+
+.slick-part-three {
+  .slick-dots {
+    top: 510px;
+  }
+}
+
+/* --UP COMING EVENT-- */
+
+.up-coming-event-section {
+  .up-coming-event-title {
+    @include justify-c;
+    @include padd(70px, 0px, 70px, 0);
+    letter-spacing: 1px;
+    line-height: 27px;
+    color: $hov-red;
+    @include fonts(700, 25);
+  }
+}
+.part-event {
+  @include justify-c;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.event-body-part {
+  @include pos(relative);
+  background-image: url("../imgs/event/ballet-545321_1920.png");
+  @include backimg(top);
+  background-color: $black-color;
+  background-position: 60% 40%;
+  @include h-w(295, 747);
+  // background-position: right 20px top 50%;
+  overflow: hidden;
+}
+
+%event-part {
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: map-get($theme-colors, secondary-three);
+  @include textalign-c;
+  @include fonts(700, 30);
+}
+.upcoming-event-body-parts {
+  .upcoming-event-body-parts-zero {
+    @include pad-t(30px);
+    @extend %event-part;
+  }
+  .upcoming-event-body-parts-one {
+    @extend %event-part;
+  }
+  .upcoming-event-body-parts-two {
+    letter-spacing: 1px;
+    line-height: 50px;
+    color: map-get($theme-colors, primary);
+    @include textalign-c;
+    @include fonts(500, 18);
+  }
+  .upcoming-event-body-parts-three{
+    @include textalign-c; 
+  }
+  #upcoming-event-body-parts-three {
+    letter-spacing: 1px;
+    line-height: 50px;
+    color: map-get($theme-colors, danger);
+    @include fonts(700, 30);
+    text-decoration: underline;
+  }
+}
+
+.upcoming-event-body-parts-fonts {
+  @include justify-c;
+  @include pad-t(20px);
+  gap: 10px;
+}
+#fonts-event {
+  @include font-part(sm);
+  color: $fefe;
+}
+
+.read-more-event {
+  @include h-w(100, 200);
+  background-color: map-get($theme-colors, secondary-five);
+  @include pos(absolute);
+  transform: rotate(30deg);
+  left: -65px;
+  top: 236px;
+  @include dis(none);
+  p {
+    letter-spacing: 1px;
+    color: $hov-red;
+    filter: drop-shadow(2px 3.464px 6.5px rgba(0, 0, 0, 0.75));
+    @include pad-t(10px);
+    @include textalign-c;
+    @include fonts(700, 18);
+  }
+}
+
+/* --Hover on event */
+.event-body-part {
+  &:hover {
+    .read-more-event {
+      @include dis(block);
+    }
+  }
+}
+
+.event-button {
+  @include padd(60px, 0, 80px, 0);
+  #eve-btn {
+    letter-spacing: 1px;
+    color: $fefe;
+    @include textalign-c;
+    @include fonts(600, 18);
+    @include h-w(52, 223);
+    border-radius: 26px;
+    background-color: $hov-red;
+    border: none;
+  }
+}
+
+#eve-btn:hover , #about-us-button:hover,#home-btn:hover{
+  transition:all 0.8s, color 0.3s 0.3s; 
+  cursor:pointer; 
+  color:#ffffff;
+
+  border: solid 1px #000000;
+  border-width: 1px;
+  background: linear-gradient(to right, red, purple);
+@include box-shadow;
+}
+
+%shadoww{
+  cursor:pointer; 
+  color: $fefe;
+  @include text-shadow;
+}
+#upcoming-event-body-parts-three:hover{
+@extend %shadoww;
+}
+.read-more-event p:hover{
+  @extend %shadoww;
+}
+#fonts-event:hover{
+  @extend %shadoww;
+}

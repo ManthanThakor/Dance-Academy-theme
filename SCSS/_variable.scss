@@ -1,37 +1,35 @@
-$black-color:#000000;
+$black-color: #000000;
 $fefe: #fefefe;
-$hov-red:#e62646;
-$font-stack: "Brush Script Std" ;
-$font-stack-two: "Raleway" ;
+$hov-red: #e62646;
+$font-stack: "Brush Script Std";
+$font-stack-two: "Raleway";
 $border-radius: 4px !default;
 $font-size: 16px;
 $font-size-two: 18px;
 
 $theme-colors: (
-  primary:#ffffff ,
+  primary: #ffffff,
   secondary: #9e9e9e,
-  secondary-two:#b8b8b8,
-  secondary-three:#bdbdbd,
-  secondary-four:#999999,
-  danger:  #e62646,
-  cool:#18aebf
+  secondary-two: #b8b8b8,
+  secondary-three: #bdbdbd,
+  secondary-four: #999999,
+  secondary-five: #696969,
+  danger: #e62646,
+  cool: #18aebf,
 );
 
-$theme-padding:(
+$theme-padding: (
   pading: 10px,
   pading-two: 12px,
-  pading-three: 15px ,
+  pading-three: 15px,
 );
 
-$f-size-zone:(
+$f-size-zone: (
   padd: 18px,
   sucs: 30px,
-  dan: 16px
+  dan: 16px,
 );
-
-
 
 // . {
 //   background-color: map-get($theme-colors, primary);
 // }
-
