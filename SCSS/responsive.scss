@@ -38,11 +38,7 @@ $font-size-res-four: 12px !important;
 $font-size-res-five: 10px !important;
 
 /* HOME PART */
-// @media (max-width: 768px) {
-// *{
-//     overflow: auto; /* Enable scrollbar on smaller screens */
-//   }
-// }
+
 @media screen and (max-width:  $breakpoint-one-B) {
   .navbar-collapse {
     position: absolute;
@@ -404,3 +400,11 @@ font-size: $font-size-res-zero;
     padding-bottom: 10px !important;
   }
 }
+
+/*----------------------------------------------*/
+
+// @media (max-width: 768px) {
+// *{
+//     overflow: auto; /* Enable scrollbar on smaller screens */
+//   }
+// }
