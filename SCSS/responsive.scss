@@ -3,8 +3,12 @@
 /* HOME PART */
 
 @media screen and (max-width: $breakpoint-zero-aaaa) {
-  body {
+  html,body {
     overflow-x: hidden;
+    // width: 100%;
+    // height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
