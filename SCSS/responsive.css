@@ -1,4 +1,10 @@
+/* responsive varibale */
 /* HOME PART */
+@media screen and (max-width: 1160px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 @media screen and (max-width: 992px) {
   .navbar-collapse {
     position: absolute;
@@ -7,7 +13,8 @@
     background-color: rgba(0, 0, 0, 0.98);
     width: 100%;
   }
-  .nav-item, .nav-link {
+  .nav-item,
+  .nav-link {
     text-align: center;
   }
   #home-section {
@@ -16,6 +23,9 @@
   }
   .home-head-sec {
     padding: 80px 15px 40px 15px !important;
+  }
+  .nav-item:hover .nav-text {
+    transform: scale(1.1) translateY(1px);
   }
 }
 @media screen and (max-width: 400px) {
@@ -219,7 +229,12 @@
     height: 245px;
   }
   .client-name {
-    padding: 0 0px 60px 0px !important;
+    padding: 0 0px 80px 0px !important;
+  }
+}
+@media screen and (max-width: 460px) {
+  .client-details .client-details-one {
+    padding-bottom: 15px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -244,12 +259,17 @@
 }
 @media screen and (max-width: 360px) {
   .slick-part-three .slick-dots {
-    top: 710px !important;
+    top: 730px !important;
   }
 }
 @media screen and (max-width: 322px) {
   .slick-part-three .slick-dots {
     top: 735px !important;
+  }
+}
+@media screen and (max-width: 285px) {
+  .slick-part-three .slick-dots {
+    top: 780px !important;
   }
 }
 

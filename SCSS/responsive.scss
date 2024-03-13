@@ -1,83 +1,52 @@
 @use "_index" as *;
 
-$breakpoint-zero: 1450px;
-$breakpoint-zero-aa: 1270px;
-$breakpoint-zero-a: 1200px;
-$breakpoint-zero-aaaa: 1160px;
-$breakpoint-zero-b: 1100px;
-$breakpoint-zero-bb: 1060px;
-$breakpoint-one: 1000px;
-$breakpoint-one-B: 992px;
-$breakpoint-one-A: 900px;
-$breakpoint-one-a: 800px;
-$breakpoint-one-d: 700px;
-$breakpoint-two: 768px;
-$breakpoint-two-c: 650px;
-$breakpoint-three: 600px;
-$breakpoint-four: 500px;
-$breakpoint-four-a: 570px;
-$breakpoint-four-b: 527px;
-$breakpoint-four-c: 510px;
-$breakpoint-five-b: 460px;
-$breakpoint-five-a: 480px;
-$breakpoint-five: 400px;
-$breakpoint-six: 300px;
-$breakpoint-six-aa: 360px;
-$breakpoint-six-aaaa: 322px;
-$breakpoint-six-a: 320px;
-$breakpoint-six-aaa: 306px;
-$breakpoint-six-b: 270px;
-$breakpoint-sev: 200px;
-
-$font-size-res-big: 40px !important;
-$font-size-res-zero: 20px !important;
-$font-size-res-one: 18px !important;
-$font-size-res-two: 16px !important;
-$font-size-res-three: 14px !important;
-$font-size-res-four: 12px !important;
-$font-size-res-five: 10px !important;
-
 /* HOME PART */
 
-@media screen and (max-width:  $breakpoint-one-B) {
+@media screen and (max-width: $breakpoint-zero-aaaa) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: $breakpoint-one-B) {
   .navbar-collapse {
     position: absolute;
     top: 100%;
     left: -1px;
     background-color: rgba(0, 0, 0, 0.98);
-    
+
     width: 100%;
-}
-.nav-item,.nav-link{
- 
-  text-align: center;
-}
-#home-section {
-  @include padd(15px, 15px, 0px, 15px);
-  background-color: rgba(0, 0, 0, 0.98);
-}
-.home-head-sec{
-  @include padd(80px, 15px, 40px, 15px);
-}
-// .nav-item {
-//   &:hover .nav-text {
-//     transform: scale(1.0) translateY(0px);
-//   }
-// }
+  }
+  .nav-item,
+  .nav-link {
+    text-align: center;
+  }
+  #home-section {
+    @include padd(15px, 15px, 0px, 15px);
+    background-color: rgba(0, 0, 0, 0.98);
+  }
+  .home-head-sec {
+    @include padd(80px, 15px, 40px, 15px);
+  }
+  .nav-item {
+    &:hover .nav-text {
+      transform: scale(1.1) translateY(1px);
+    }
+  }
 }
 @media screen and (max-width: $breakpoint-five) {
-  .home-t-one{
-font-size: $font-size-res-big;
+  .home-t-one {
+    font-size: $font-size-res-big;
   }
-  .home-head-sec-two{
+  .home-head-sec-two {
     font-size: $font-size-res-zero;
   }
 }
 @media screen and (max-width: $breakpoint-six-a) {
-  .home-t-one{
-font-size: $font-size-res-zero;
+  .home-t-one {
+    font-size: $font-size-res-zero;
   }
-  .home-head-sec-two{
+  .home-head-sec-two {
     font-size: $font-size-res-one;
   }
 }
@@ -263,11 +232,17 @@ font-size: $font-size-res-zero;
     height: 245px;
   }
   .client-name {
-    @include padd(0, 0px, 60px, 0px);
+    @include padd(0, 0px, 80px, 0px);
   }
 }
 
+  @media screen and (max-width: $breakpoint-five-b) {
+    .client-details .client-details-one {
+      padding-bottom: 15px !important;
+  }
+}
 .slick-part-three .slick-dots {
+  
   @media screen and (max-width: $breakpoint-two) {
     top: 580px;
   }
@@ -281,10 +256,13 @@ font-size: $font-size-res-zero;
     top: 685px !important;
   }
   @media screen and (max-width: $breakpoint-six-aa) {
-    top: 710px !important;
+    top: 730px !important;
   }
   @media screen and (max-width: $breakpoint-six-aaaa) {
     top: 735px !important;
+  }
+  @media screen and (max-width: $breakpoint-six-bb) {
+    top: 780px !important;
   }
 }
 
