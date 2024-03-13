@@ -44,6 +44,14 @@
     font-size: 18px !important;
   }
 }
+@media screen and (max-width: 510px) {
+  #background-img-sec-1 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 51%;
+       object-position: 51%;
+  }
+}
 /* SERVICE SECTION */
 @media screen and (max-width: 1200px) {
   .service-section-four {

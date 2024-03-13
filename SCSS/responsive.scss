@@ -50,6 +50,13 @@
     font-size: $font-size-res-one;
   }
 }
+@media screen and (max-width: $breakpoint-four-c) {
+  #background-img-sec-1 {
+    object-fit: cover;
+    object-position: 51%;
+  }
+}
+
 /* SERVICE SECTION */
 
 @media screen and (max-width: $breakpoint-zero-a) {
@@ -236,13 +243,12 @@
   }
 }
 
-  @media screen and (max-width: $breakpoint-five-b) {
-    .client-details .client-details-one {
-      padding-bottom: 15px !important;
+@media screen and (max-width: $breakpoint-five-b) {
+  .client-details .client-details-one {
+    padding-bottom: 15px !important;
   }
 }
 .slick-part-three .slick-dots {
-  
   @media screen and (max-width: $breakpoint-two) {
     top: 580px;
   }
