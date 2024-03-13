@@ -759,6 +759,8 @@
 /* --copyright-part-- */
 .copyright-section {
   padding: 20px 80px 20px 80px !important;
+  background-color: #000000;
+  border-top: solid 2px #ffffff;
 }
 
 .copy-right-text p {
@@ -773,4 +775,7 @@
 .copyright-fonts {
   display: flex;
   margin-left: auto !important;
-}/*# sourceMappingURL=main.css.map */
+  gap: 15px;
+}
+
+/*--------------------------------------*//*# sourceMappingURL=main.css.map */

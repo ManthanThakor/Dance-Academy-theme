@@ -1,0 +1,199 @@
+/* footer part */
+/* DANCE STUDIO PART */
+@media screen and (max-width: 1450px) {
+  .dance-studio-section {
+    padding: 75px 100px 75px 100px !important;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .dance-studio-section {
+    padding: 75px 50px 75px 50px !important;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .dance-studio-section {
+    padding: 45px 20px 45px 20px !important;
+  }
+}
+@media screen and (max-width: 510px) {
+  .dance-studio-section {
+    padding: 40px 15px 30px 15px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #prevbutton-slick {
+    left: 25px;
+  }
+  #nextbutton-slick {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #prevbutton-slick {
+    top: calc(50% - 99.5px);
+  }
+  #nextbutton-slick {
+    transform: translateY(-330%);
+  }
+}
+@media screen and (max-width: 570px) {
+  .dance-studio-img-part .dance-studio-img {
+    height: 250px !important;
+    width: 250px !important;
+  }
+  #prevbutton-slick {
+    top: calc(50% - 110.5px);
+  }
+  #nextbutton-slick {
+    transform: translateY(-370%);
+  }
+}
+/* CLIENT SECTION */
+@media screen and (max-width: 900px) {
+  .client-body-part, .client-img-part {
+    padding-left: 20px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .client-details {
+    padding: 115px 30px 0 0px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .client-details {
+    padding: 0 15px 0 15px !important;
+  }
+  .client-body-part {
+    padding-left: 0px !important;
+  }
+  .client-img-part {
+    padding-left: 0px !important;
+    height: 245px;
+  }
+  .client-name {
+    padding: 0 0px 30px 0px !important;
+  }
+  .slick-part-three .slick-dots {
+    top: 580px;
+  }
+}
+/* event part */
+@media screen and (max-width: 768px) {
+  .event-body-part {
+    width: 95% !important;
+    background-size: 700px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .read-more-event {
+    width: 105px !important;
+    left: -42px;
+    top: 260px;
+  }
+  .read-more-event p {
+    padding-top: 0px !important;
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 306px) {
+  .upcoming-event-body-parts-one,
+  .upcoming-event-body-parts-zero,
+  #upcoming-event-body-parts-three {
+    font-size: 18px !important;
+  }
+  .upcoming-event-body-parts-two {
+    font-size: 14px !important;
+  }
+  #fonts-event {
+    font-size: 16px !important;
+  }
+  .up-coming-event-section .up-coming-event-title,
+  .event-button {
+    padding: 30px 0 30px 0 !important;
+  }
+}
+@media screen and (max-width: 270px) {
+  .up-coming-event-title p {
+    font-size: 16px !important;
+    text-align: center;
+  }
+}
+/*- footer part- */
+@media screen and (max-width: 1000px) {
+  .footer-section {
+    padding: 30px 40px 30px 40px !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer-section {
+    padding: 30px 15px 30px 15px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-title,
+  .foot-button {
+    text-align: center;
+  }
+  .foot-name,
+  .foot-email,
+  .foot-numb,
+  .foot-message {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #num-dis,
+  #mail-dis,
+  #add-dis {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 270px) {
+  #num-dis,
+  #mail-dis,
+  #add-dis {
+    font-size: 12px !important;
+    padding: 0px !important;
+  }
+  .footer-address-section,
+  .footer-mail-section,
+  .footer-number-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #foot-icons-part {
+    padding: 0 0 10px 0 !important;
+  }
+}
+/* copyright part */
+@media screen and (max-width: 1000px) {
+  .copyright-section {
+    padding: 20px 40px 20px 40px !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .copyright-section {
+    padding: 15px 15px 15px 15px !important;
+  }
+}
+@media screen and (max-width: 570px) {
+  .copyright-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .copyright-fonts {
+    margin: 0 !important;
+    justify-content: center;
+  }
+  .copy-right-text p {
+    text-align: center;
+    padding-bottom: 10px !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */

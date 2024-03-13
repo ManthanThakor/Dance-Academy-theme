@@ -1,0 +1,248 @@
+@use "_index" as *;
+
+
+
+$breakpoint-zero: 1450px;
+$breakpoint-zero-aa: 1270px;
+$breakpoint-zero-a: 1200px;
+$breakpoint-zero-aaaa: 1160px;
+$breakpoint-zero-b: 1100px;
+$breakpoint-zero-bb: 1060px;
+$breakpoint-one: 1000px;
+$breakpoint-one-A: 900px;
+$breakpoint-one-a: 800px;
+$breakpoint-one-d: 700px;
+$breakpoint-two: 768px;
+$breakpoint-two-c: 650px;
+$breakpoint-three: 600px;
+$breakpoint-four: 500px;
+$breakpoint-four-a: 570px;
+$breakpoint-four-b: 527px;
+$breakpoint-four-c: 510px;
+$breakpoint-five-a: 480px;
+$breakpoint-five: 400px;
+$breakpoint-six: 300px;
+$breakpoint-six-aa: 360px;
+$breakpoint-six-a: 320px;
+$breakpoint-six-aaa: 306px;
+$breakpoint-six-b: 270px;
+$breakpoint-sev: 200px;
+
+$font-size-res-zero: 20px !important;
+$font-size-res-one: 18px !important;
+$font-size-res-two: 16px !important;
+$font-size-res-three: 14px !important;
+$font-size-res-four: 12px !important;
+$font-size-res-five: 10px !important;
+
+/* footer part */
+
+
+
+/* DANCE STUDIO PART */
+
+.dance-studio-section {
+  @media screen and (max-width: $breakpoint-zero) {
+  @include padd(75px,100px,75px,100px);
+    }
+    @media screen and (max-width: $breakpoint-zero-aa) {
+      @include padd(75px,50px,75px,50px);
+    }
+    @media screen and (max-width: $breakpoint-zero-aaaa) {
+      @include padd(45px,20px,45px,20px);
+    }
+    @media screen and (max-width: $breakpoint-four-c) {
+      @include padd(40px,15px,30px,15px);
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-zero-b){
+    #prevbutton-slick {
+      left: 25px;
+    }
+    #nextbutton-slick {
+      right: 30px;
+    }
+  }
+  
+  @media screen and (max-width: $breakpoint-one-a){
+    #prevbutton-slick {
+      top: calc(50% - 99.5px);
+    }
+    #nextbutton-slick {
+      transform: translateY(-330%);
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-four-a) {
+    .dance-studio-img-part .dance-studio-img {
+      height: 250px !important;
+      width: 250px !important;
+    }
+    #prevbutton-slick {
+      top: calc(50% - 110.5px);
+    }
+    #nextbutton-slick {
+      transform: translateY(-370%)
+    }
+    
+  }
+  @media screen and (max-width:$breakpoint-five-a) {
+   
+  }
+  @media screen and (max-width: $breakpoint-one-A) {
+   
+  }
+
+
+
+/* CLIENT SECTION */
+
+
+@media screen and (max-width: $breakpoint-one-A) {
+  .client-body-part,.client-img-part {
+   padding-left: 20px !important;
+  }
+}
+@media screen and (max-width:$breakpoint-one-a) {
+  .client-details {
+    @include padd(115px,30px,0,0px);
+  }
+}
+@media screen and (max-width: $breakpoint-two) {
+  .client-details {
+    @include padd(0,15px,0,15px);
+  }
+  .client-body-part{
+    padding-left: 0px !important;
+   }
+   .client-img-part {
+    padding-left: 0px !important;
+    height: 245px;
+   }
+   .client-name{
+    @include padd(0,0px,30px,0px);
+   }
+   
+.slick-part-three {
+  .slick-dots {
+    top: 580px;
+  }
+}
+}
+@media screen and (max-width: $breakpoint-two) {
+  
+}
+
+/* event part */
+
+@media screen and (max-width: $breakpoint-two) {
+  .event-body-part {
+    width: 95% !important;
+    background-size: 700px;
+  }
+}
+@media screen and (max-width: $breakpoint-six-aa) {
+  .read-more-event {
+    width: 105px !important;
+    left: -42px;
+    top: 260px;
+  }
+  .read-more-event p {
+    padding-top: 0px !important;
+    font-size: $font-size-res-four;
+  }
+}
+@media screen and (max-width: $breakpoint-six-aaa) {
+  .upcoming-event-body-parts-one,
+  .upcoming-event-body-parts-zero,
+  #upcoming-event-body-parts-three {
+    font-size: $font-size-res-one;
+  }
+  .upcoming-event-body-parts-two {
+    font-size: $font-size-res-three;
+  }
+  #fonts-event {
+    font-size: $font-size-res-two;
+  }
+  .up-coming-event-section .up-coming-event-title,
+  .event-button {
+    @include padd(30px, 0, 30px, 0);
+  }
+}
+@media screen and (max-width: $breakpoint-six-b) {
+  .up-coming-event-title p {
+    font-size: $font-size-res-two;
+    text-align: center;
+  }
+}
+
+/*- footer part- */
+
+.footer-section {
+  @media screen and (max-width: $breakpoint-one) {
+    @include padd(30px, 40px, 30px, 40px);
+  }
+  @media screen and (max-width: $breakpoint-two-c) {
+    @include padd(30px, 15px, 30px, 15px);
+  }
+}
+
+@media screen and (max-width: $breakpoint-two) {
+  .footer-title,
+  .foot-button {
+    text-align: center;
+  }
+  .foot-name,
+  .foot-email,
+  .foot-numb,
+  .foot-message {
+    width: 100%;
+  }
+}
+@media screen and (max-width: $breakpoint-six-a) {
+  #num-dis,
+  #mail-dis,
+  #add-dis {
+    font-size: $font-size-res-three;
+  }
+}
+@media screen and (max-width: $breakpoint-six-b) {
+  #num-dis,
+  #mail-dis,
+  #add-dis {
+    font-size: $font-size-res-four;
+    padding: 0px !important;
+  }
+  .footer-address-section,
+  .footer-mail-section,
+  .footer-number-section {
+    @include flex-resp;
+  }
+  #foot-icons-part {
+    @include padd(0, 0, 10px, 0);
+  }
+}
+
+/* copyright part */
+.copyright-section {
+  @media screen and (max-width: $breakpoint-one) {
+    @include padd(20px, 40px, 20px, 40px);
+  }
+  @media screen and (max-width: $breakpoint-two-c) {
+    @include padd(15px, 15px, 15px, 15px);
+  }
+  @media screen and (max-width: $breakpoint-four-a) {
+    @include flex-col;
+  }
+}
+@media screen and (max-width: $breakpoint-four-a) {
+  .copyright-fonts {
+    margin: 0 !important;
+    justify-content: center;
+  }
+  .copy-right-text p {
+    text-align: center;
+    padding-bottom: 10px !important;
+  }
+}
