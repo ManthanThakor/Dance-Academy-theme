@@ -388,8 +388,19 @@
 
 /*----------------------------------------------*/
 
-// @media (max-width: 768px) {
-// *{
-//     overflow: auto; /* Enable scrollbar on smaller screens */
-//   }
-// }
+
+
+@media (max-width: 400px) {
+  .slick-dots button {
+    padding: 9px !important;
+  }
+  button:before {
+    width: 50% !important;
+    height: 50% !important;
+  }
+  .slick-dots {
+    li {
+      @include h-w(0, 25);
+    }
+  }
+}

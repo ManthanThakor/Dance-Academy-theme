@@ -402,4 +402,17 @@
     padding-bottom: 10px !important;
   }
 }
-/*----------------------------------------------*//*# sourceMappingURL=responsive.css.map */
+/*----------------------------------------------*/
+@media (max-width: 400px) {
+  .slick-dots button {
+    padding: 9px !important;
+  }
+  button:before {
+    width: 50% !important;
+    height: 50% !important;
+  }
+  .slick-dots li {
+    height: 0px !important;
+    width: 25px !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */
