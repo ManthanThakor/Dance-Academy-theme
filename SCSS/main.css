@@ -55,6 +55,14 @@
   transform: scale(1.2) translateY(-1px);
 }
 
+.navbar-toggler-icon img {
+  opacity: 1 !important;
+  border: #fefefe solid 3px;
+  border-radius: 10px;
+  height: 30px !important;
+  width: 30px !important;
+}
+
 .carousel-item img {
   width: 100% !important;
 }
@@ -175,8 +183,7 @@
 }
 
 .service-section-four, .service-section-three, .service-section-two, .service-section-one {
-  height: 455px !important;
-  width: 344px !important;
+  height: 455px;
 }
 
 .service-section-one {
@@ -726,12 +733,16 @@
   border: none;
 }
 
-.copyright-section, .footer-address-section, .footer-mail-section, .footer-number-section {
+.copyright-section, .footer-address-section,
+.footer-mail-section,
+.footer-number-section {
   display: flex;
   flex-direction: row;
 }
 
-.footer-address-section, .footer-mail-section, .footer-number-section {
+.footer-address-section,
+.footer-mail-section,
+.footer-number-section {
   padding: 30px 0 0 0px !important;
 }
 

@@ -1,7 +1,5 @@
 @use "_index" as *;
 
-
-
 $breakpoint-zero: 1450px;
 $breakpoint-zero-aa: 1270px;
 $breakpoint-zero-a: 1200px;
@@ -9,6 +7,7 @@ $breakpoint-zero-aaaa: 1160px;
 $breakpoint-zero-b: 1100px;
 $breakpoint-zero-bb: 1060px;
 $breakpoint-one: 1000px;
+$breakpoint-one-B: 992px;
 $breakpoint-one-A: 900px;
 $breakpoint-one-a: 800px;
 $breakpoint-one-d: 700px;
@@ -19,15 +18,18 @@ $breakpoint-four: 500px;
 $breakpoint-four-a: 570px;
 $breakpoint-four-b: 527px;
 $breakpoint-four-c: 510px;
+$breakpoint-five-b: 460px;
 $breakpoint-five-a: 480px;
 $breakpoint-five: 400px;
 $breakpoint-six: 300px;
 $breakpoint-six-aa: 360px;
+$breakpoint-six-aaaa: 322px;
 $breakpoint-six-a: 320px;
 $breakpoint-six-aaa: 306px;
 $breakpoint-six-b: 270px;
 $breakpoint-sev: 200px;
 
+$font-size-res-big: 40px !important;
 $font-size-res-zero: 20px !important;
 $font-size-res-one: 18px !important;
 $font-size-res-two: 16px !important;
@@ -35,103 +37,259 @@ $font-size-res-three: 14px !important;
 $font-size-res-four: 12px !important;
 $font-size-res-five: 10px !important;
 
-/* footer part */
+/* HOME PART */
+// @media (max-width: 768px) {
+// *{
+//     overflow: auto; /* Enable scrollbar on smaller screens */
+//   }
+// }
+@media screen and (max-width:  $breakpoint-one-B) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    background-color: rgba(0, 0, 0, 0.98);
+    
+    width: 100%;
+}
+.nav-item,.nav-link{
+ 
+  text-align: center;
+}
+#home-section {
+  @include padd(15px, 15px, 0px, 15px);
+  background-color: rgba(0, 0, 0, 0.98);
+}
+.home-head-sec{
+  @include padd(80px, 15px, 40px, 15px);
+}
+// .nav-item {
+//   &:hover .nav-text {
+//     transform: scale(1.0) translateY(0px);
+//   }
+// }
+}
+@media screen and (max-width: $breakpoint-five) {
+  .home-t-one{
+font-size: $font-size-res-big;
+  }
+  .home-head-sec-two{
+    font-size: $font-size-res-zero;
+  }
+}
+@media screen and (max-width: $breakpoint-six-a) {
+  .home-t-one{
+font-size: $font-size-res-zero;
+  }
+  .home-head-sec-two{
+    font-size: $font-size-res-one;
+  }
+}
+/* SERVICE SECTION */
 
+@media screen and (max-width: $breakpoint-zero-a) {
+  .service-section-four {
+    margin-top: 30px !important;
+  }
+}
+@media screen and (max-width: $breakpoint-one-B) {
+  .service-section-three {
+    margin-top: 30px !important;
+  }
+}
+@media screen and (max-width: $breakpoint-two) {
+  .service-section-two {
+    margin-top: 30px !important;
+  }
+}
 
+@media screen and (max-width: $breakpoint-five-a) {
+  #Services-section {
+    @include padd(40px, 15px, 40px, 15px);
+  }
+  .service-section-one,
+  .service-section-two,
+  .service-section-three,
+  .service-section-four {
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+
+/* ABOUT US PART */
+#about-us-body-part {
+  padding: 60px 160px 60px 200px !important;
+  @media screen and (max-width: $breakpoint-zero) {
+    @include padd(60px, 100px, 60px, 200px);
+  }
+  @media screen and (max-width: $breakpoint-zero-a) {
+    @include padd(60px, 25px, 60px, 200px);
+  }
+  @media screen and (max-width: $breakpoint-one-B) {
+    @include padd(30px, 15px, 30px, 15px);
+  }
+}
+@media screen and (max-width: $breakpoint-one-B) {
+  .about-us-img {
+    @include flex-resp;
+    padding-bottom: 10px !important;
+  }
+  .about-us-part {
+    @include padd(0px, 0px, 0px, 0px);
+  }
+}
+
+@media screen and (max-width: $breakpoint-five) {
+  .about-us-img-part {
+    height: 300px !important;
+    width: 92% !important;
+  }
+  .about-us-title p {
+    font-size: $font-size-res-zero;
+  }
+  .about-us-discription p {
+    font-size: $font-size-res-two;
+  }
+}
 
 /* DANCE STUDIO PART */
 
 .dance-studio-section {
   @media screen and (max-width: $breakpoint-zero) {
-  @include padd(75px,100px,75px,100px);
-    }
-    @media screen and (max-width: $breakpoint-zero-aa) {
-      @include padd(75px,50px,75px,50px);
-    }
-    @media screen and (max-width: $breakpoint-zero-aaaa) {
-      @include padd(45px,20px,45px,20px);
-    }
-    @media screen and (max-width: $breakpoint-four-c) {
-      @include padd(40px,15px,30px,15px);
-    }
+    @include padd(75px, 100px, 75px, 100px);
   }
+  @media screen and (max-width: $breakpoint-zero-aa) {
+    @include padd(75px, 50px, 75px, 50px);
+  }
+  @media screen and (max-width: $breakpoint-zero-aaaa) {
+    @include padd(45px, 20px, 45px, 20px);
+  }
+  @media screen and (max-width: $breakpoint-four-c) {
+    @include padd(40px, 15px, 0px, 15px);
+  }
+}
 
-  @media screen and (max-width: $breakpoint-zero-b){
-    #prevbutton-slick {
-      left: 25px;
-    }
-    #nextbutton-slick {
-      right: 30px;
-    }
+@media screen and (max-width: $breakpoint-zero-b) {
+  #prevbutton-slick {
+    left: 25px;
   }
-  
-  @media screen and (max-width: $breakpoint-one-a){
-    #prevbutton-slick {
-      top: calc(50% - 99.5px);
-    }
-    #nextbutton-slick {
-      transform: translateY(-330%);
-    }
+  #nextbutton-slick {
+    right: 30px;
   }
+}
 
-  @media screen and (max-width: $breakpoint-four-a) {
-    .dance-studio-img-part .dance-studio-img {
-      height: 250px !important;
-      width: 250px !important;
-    }
-    #prevbutton-slick {
-      top: calc(50% - 110.5px);
-    }
-    #nextbutton-slick {
-      transform: translateY(-370%)
-    }
-    
+@media screen and (max-width: $breakpoint-one-a) {
+  #prevbutton-slick {
+    top: calc(50% - 99.5px);
   }
-  @media screen and (max-width:$breakpoint-five-a) {
-   
+  #nextbutton-slick {
+    transform: translateY(-330%);
   }
-  @media screen and (max-width: $breakpoint-one-A) {
-   
-  }
+}
 
+@media screen and (max-width: $breakpoint-four-a) {
+  .dance-studio-img-part .dance-studio-img {
+    height: 250px !important;
+    width: 250px !important;
+  }
+  #prevbutton-slick {
+    top: calc(50% - 110.5px);
+  }
+  #nextbutton-slick {
+    transform: translateY(-370%);
+  }
+}
 
+@media screen and (max-width: $breakpoint-five-a) {
+  #prevbutton-slick {
+    width: 50px !important;
+    top: calc(50% - 140.5px);
+  }
+  #nextbutton-slick {
+    width: 50px !important;
+    transform: translateY(-450%);
+  }
+  .dance-studio-img-part {
+    @include padd(30px, 0px, 30px, 0px);
+  }
+}
+@media screen and (max-width: $breakpoint-five) {
+  .dance-studio-img-part .dance-studio-img {
+    height: 150px !important;
+    width: 150px !important;
+  }
+  #nextbutton-slick {
+    width: 40px !important;
+    transform: translateY(-560%);
+  }
+  #prevbutton-slick {
+    width: 40px !important;
+    top: calc(50% - 170.5px);
+  }
+}
+@media screen and (max-width: $breakpoint-six-b) {
+  .dance-studio-title p {
+    font-size: $font-size-res-two;
+  }
+  #nextbutton-slick {
+    width: 25px !important;
+    transform: translateY(-717%);
+  }
+  #prevbutton-slick {
+    width: 25px !important;
+    top: calc(50% - 221.5px);
+  }
+}
 
 /* CLIENT SECTION */
 
-
 @media screen and (max-width: $breakpoint-one-A) {
-  .client-body-part,.client-img-part {
-   padding-left: 20px !important;
+  .client-body-part,
+  .client-img-part {
+    padding-left: 20px !important;
   }
 }
-@media screen and (max-width:$breakpoint-one-a) {
+@media screen and (max-width: $breakpoint-one-a) {
   .client-details {
-    @include padd(115px,30px,0,0px);
+    @include padd(115px, 30px, 0, 0px);
   }
 }
 @media screen and (max-width: $breakpoint-two) {
   .client-details {
-    @include padd(0,15px,0,15px);
+    @include padd(0, 15px, 0, 15px);
   }
-  .client-body-part{
+  .client-body-part {
     padding-left: 0px !important;
-   }
-   .client-img-part {
+  }
+  .client-img-part {
     padding-left: 0px !important;
     height: 245px;
-   }
-   .client-name{
-    @include padd(0,0px,30px,0px);
-   }
-   
-.slick-part-three {
-  .slick-dots {
-    top: 580px;
+  }
+  .client-name {
+    @include padd(0, 0px, 60px, 0px);
   }
 }
-}
-@media screen and (max-width: $breakpoint-two) {
-  
+
+.slick-part-three .slick-dots {
+  @media screen and (max-width: $breakpoint-two) {
+    top: 580px;
+  }
+  @media screen and (max-width: $breakpoint-four) {
+    top: 640px !important;
+  }
+  @media screen and (max-width: $breakpoint-five-b) {
+    top: 675px !important;
+  }
+  @media screen and (max-width: $breakpoint-five) {
+    top: 685px !important;
+  }
+  @media screen and (max-width: $breakpoint-six-aa) {
+    top: 710px !important;
+  }
+  @media screen and (max-width: $breakpoint-six-aaaa) {
+    top: 735px !important;
+  }
 }
 
 /* event part */
