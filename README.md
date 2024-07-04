@@ -37,13 +37,8 @@ To get a local copy up and running, follow these simple steps:
    ```sh
    git clone https://github.com/your-username/dance-academy-website.git
 2. Open index.html in your browser to view the website.
-Usage
-Toggle between light and dark themes using the button on the top right corner.
-Enjoy the looping and muted video showcasing the Dance Academy.
-License
-Distributed under the MIT License. See LICENSE for more information.
 
-Contact
+## Contact
 Manthan Thakor - thakormanthan849@gmail.com
-
+## Project Link
 Project Link: https://github.com/ManthanThakor/Dance-Academy-theme
