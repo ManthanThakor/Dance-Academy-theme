@@ -27,7 +27,7 @@ Welcome to the Dance Academy Website project! This project is a simple static we
 
 ## Demo
 
-![Dance Academy Website Demo](path/to/demo-image.png)
+![Dance Academy Website Demo](image.png)
 
 ## Installation
 
