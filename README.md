@@ -14,9 +14,9 @@ Welcome to the Dance Academy Website project! This project is a simple static we
 
 ## Features
 
-- Responsive design
-- Light and dark theme toggle (default is dark mode)
-- Looping and muted video element
+- Fully responsive design
+- Clean and modern aesthetic
+- Easy to customize with SCSS
 
 ## Technologies Used
 
@@ -37,6 +37,12 @@ To get a local copy up and running, follow these simple steps:
    ```sh
    git clone https://github.com/your-username/dance-academy-website.git
 2. Open index.html in your browser to view the website.
+
+## Usage
+Once the project is set up, you can use the website to display details about your dance academy, including event details, class schedules, and instructor information
+
+## License
+Distributed under the MIT License. See LICENSE for more information.
 
 ## Contact
 Manthan Thakor - thakormanthan849@gmail.com
