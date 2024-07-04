@@ -46,4 +46,4 @@ Distributed under the MIT License. See LICENSE for more information.
 Contact
 Manthan Thakor - thakormanthan849@gmail.com
 
-Project Link: https://github.com/your-username/dance-academy-website
+Project Link: https://github.com/ManthanThakor/Dance-Academy-theme
