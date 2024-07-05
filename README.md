@@ -1,6 +1,6 @@
 # Dance Academy Website
 
-Welcome to the Dance Academy Website project! This project is a simple static website built using HTML, Bootstrap, and SCSS, featuring a light and dark theme toggle and a looping video element.
+Welcome to the Dance Academy Website project! This project is a simple static website built using HTML, Bootstrap, and SCSS, featuring a dance event details etc.
 
 ## Table of Contents
 
